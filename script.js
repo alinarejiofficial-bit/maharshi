@@ -186,101 +186,32 @@ document.addEventListener('DOMContentLoaded', function () {
   startVenturesAutoScroll();
 });
 
-// About section entrance animations
+// Scroll-based section reveal animations (toggle on enter/leave)
 document.addEventListener('DOMContentLoaded', function () {
-  const aboutSection = document.querySelector('.about-section');
-  if (!aboutSection) return;
+  function setupScrollReveal(selector, visibleClass, threshold) {
+    const section = document.querySelector(selector);
+    if (!section) return;
 
-  const observer = new IntersectionObserver(
-    (entries) => {
-      if (entries.some((entry) => entry.isIntersecting)) {
-        aboutSection.classList.add('about-visible');
-        observer.disconnect();
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          section.classList.toggle(visibleClass, entry.isIntersecting);
+        });
+      },
+      {
+        threshold: threshold,
+        rootMargin: '0px 0px -8% 0px',
       }
-    },
-    { threshold: 0.2 }
-  );
-
-  observer.observe(aboutSection);
-});
-
-// Companies and Projects section entrance animations
-document.addEventListener('DOMContentLoaded', function () {
-  const valuesSection = document.querySelector('.values-section');
-  const companiesSection = document.querySelector('.companies-section');
-  const projectsSection = document.querySelector('.projects-section');
-  const venturesSection = document.querySelector('.ventures-section');
-  const footerSection = document.querySelector('.site-footer');
-
-  if (valuesSection) {
-    const valuesObserver = new IntersectionObserver(
-      (entries) => {
-        if (entries.some((entry) => entry.isIntersecting)) {
-          valuesSection.classList.add('values-visible');
-          valuesObserver.disconnect();
-        }
-      },
-      { threshold: 0.14 }
     );
 
-    valuesObserver.observe(valuesSection);
+    observer.observe(section);
   }
 
-  if (companiesSection) {
-    const companiesObserver = new IntersectionObserver(
-      (entries) => {
-        if (entries.some((entry) => entry.isIntersecting)) {
-          companiesSection.classList.add('companies-visible');
-          companiesObserver.disconnect();
-        }
-      },
-      { threshold: 0.16 }
-    );
-
-    companiesObserver.observe(companiesSection);
-  }
-
-  if (projectsSection) {
-    const projectsObserver = new IntersectionObserver(
-      (entries) => {
-        if (entries.some((entry) => entry.isIntersecting)) {
-          projectsSection.classList.add('projects-visible');
-          projectsObserver.disconnect();
-        }
-      },
-      { threshold: 0.16 }
-    );
-
-    projectsObserver.observe(projectsSection);
-  }
-
-  if (venturesSection) {
-    const venturesObserver = new IntersectionObserver(
-      (entries) => {
-        if (entries.some((entry) => entry.isIntersecting)) {
-          venturesSection.classList.add('ventures-visible');
-          venturesObserver.disconnect();
-        }
-      },
-      { threshold: 0.12 }
-    );
-
-    venturesObserver.observe(venturesSection);
-  }
-
-  if (footerSection) {
-    const footerObserver = new IntersectionObserver(
-      (entries) => {
-        if (entries.some((entry) => entry.isIntersecting)) {
-          footerSection.classList.add('footer-visible');
-          footerObserver.disconnect();
-        }
-      },
-      { threshold: 0.1 }
-    );
-
-    footerObserver.observe(footerSection);
-  }
+  setupScrollReveal('.about-section', 'about-visible', 0.2);
+  setupScrollReveal('.values-section', 'values-visible', 0.14);
+  setupScrollReveal('.companies-section', 'companies-visible', 0.16);
+  setupScrollReveal('.projects-section', 'projects-visible', 0.16);
+  setupScrollReveal('.ventures-section', 'ventures-visible', 0.12);
 });
 
 // Values section carousel — infinite loop through all cards in order
