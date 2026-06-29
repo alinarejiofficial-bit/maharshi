@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maharshi Group - Empowering Industries</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="hero">
+    <div class="navbar-container">
+      <nav class="navbar">
+        <div class="logo-container">
+          <img src="assets/logo1.png" alt="Maharshi Ayur Lab" class="logo-img">
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#core-values">Companies</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+
+        <div class="nav-right">
+          <div class="contact-info">
+            <div class="phone-icon">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <div class="contact-text">
+              <span class="label">Have Any Questions?</span>
+              <span class="number">+91 996 109 6701</span>
+            </div>
+          </div>
+
+          <div class="divider"></div>
+
+          <a href="#" class="btn btn-primary">
+            Get in Touch
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+            </svg>
+          </a>
+        </div>
+      </nav>
+    </div>
+
+    <div class="hero-content">
+      <div class="subtitle">MAHARSHI GROUP</div>
+      <h1 class="title">Empowering Industries With<br>Trust and Innovation</h1>
+      <p class="description">Blending Ayurveda with innovation to create a legacy of wellness and<br>progress.</p>
+
+      <div class="hero-buttons">
+        <a href="#" class="btn btn-primary">
+          About Us
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+          </svg>
+        </a>
+        <a href="#" class="btn btn-primary">
+          Our Companies
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <section class="about-section" id="about">
+    <div class="about-container">
+
+      <!-- Left: Images -->
+      <div class="about-images">
+        <div class="about-img-top">
+          <img src="assets/8-350x395.jpeg" alt="Maharshi Group Building" />
+        </div>
+        <div class="about-img-bottom">
+          <img src="assets/WhatsApp-Image-2025-10-23-at-2.42.13-PM-379x428.jpeg" alt="Maharshi Group Campus" />
+        </div>
+          <div class="about-badge">
+          <div class="badge-top">
+            <div class="badge-icon">
+              <i class="fa-solid fa-briefcase"></i>
+            </div>
+            <span class="badge-num" data-target="28">1+</span>
+          </div>
+          <div class="badge-divider"></div>
+          <span class="badge-label">Years Of Experience</span>
+        </div>
+      </div>
+
+      <!-- Right: Content -->
+      <div class="about-content">
+        <div class="about-tag">ABOUT COMPANY</div>
+        <h2 class="about-title">
+          Enriching lives through<br>
+          Wellness and Innovation —<br>
+          <em class="about-highlight">Be with us</em>
+        </h2>
+        <p class="about-desc">
+          Maharshi Group is a diversified enterprise driving progress across healthcare, manufacturing,
+          e-commerce, and global trade. Blending traditional values with modern innovation, we deliver
+          trusted solutions that enhance lives and foster sustainable growth.
+        </p>
+
+        <div class="about-accordion">
+          <div class="accordion-item" onclick="toggleAccordion(this)">
+            <div class="accordion-header">
+              <span>Ayurvedic Trust &amp; Wellness</span>
+              <span class="accordion-icon">+</span>
+            </div>
+            <div class="accordion-body">
+              <p>We combine the ancient wisdom of Ayurveda with modern science to deliver natural, effective wellness solutions trusted across generations.</p>
+            </div>
+          </div>
+          <div class="accordion-item" onclick="toggleAccordion(this)">
+            <div class="accordion-header">
+              <span>Global Innovation &amp; Sustainability</span>
+              <span class="accordion-icon">+</span>
+            </div>
+            <div class="accordion-body">
+              <p>Our commitment to sustainable innovation drives us to develop eco-friendly solutions that benefit communities and the planet.</p>
+            </div>
+          </div>
+        </div>
+
+        <a href="#" class="btn btn-primary about-btn">
+          View Our Companies
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="18" height="18">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+          </svg>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Core Values Section -->
+  <section class="values-section" id="core-values">
+    <div class="values-bg" aria-hidden="true"></div>
+    <div class="values-container">
+      <div class="values-top">
+        <div class="values-left-spacer" aria-hidden="true"></div>
+        <div class="values-content">
+          <div class="values-tag">OUR CORE VALUES</div>
+          <h2 class="values-title">
+            Delivering trusted solutions<br>
+            <em class="values-highlight">across industries.</em>
+          </h2>
+          <p class="values-desc">
+            At Maharshi, our core values reflect our commitment to wellness, innovation, and excellence.
+            From Ayurvedic healthcare and research to modern lifestyle solutions, every product and service we offer
+            is rooted in authenticity, sustainability, and quality. Guided by tradition and driven by innovation, we
+            continue to build trust across diverse industries and global markets.
+          </p>
+          <a href="#" class="btn btn-primary values-btn">
+            View More
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="18" height="18">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="values-nav">
+        <button class="values-nav-btn" id="valuesPrev" aria-label="Previous cards">
+          <i class="fa-solid fa-arrow-left"></i>
+        </button>
+        <button class="values-nav-btn" id="valuesNext" aria-label="Next cards">
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+
+      <div class="values-cards-wrap">
+        <div class="values-cards-viewport">
+          <div class="values-cards-track" id="valuesTrack">
+            <div class="values-slide">
+              <article class="value-card">
+                <div class="value-card-icon value-card-icon-squares">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <rect x="4" y="6" width="10" height="10" rx="1"/>
+                    <rect x="10" y="8" width="10" height="10" rx="1"/>
+                  </svg>
+                </div>
+                <h3 class="value-card-title">Research &amp; Remedies</h3>
+                <p class="value-card-desc">Innovative research and natural remedies designed to improve health, wellness, and lifestyle outcomes.</p>
+                <span class="value-card-arrow">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+                  </svg>
+                </span>
+              </article>
+              <article class="value-card">
+                <div class="value-card-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M12 3L3 9l9 12 9-12-9-6z"/>
+                  </svg>
+                </div>
+                <h3 class="value-card-title">Food Supplements</h3>
+                <p class="value-card-desc">High-quality supplements that support nutrition, energy, and overall health for everyday living.</p>
+                <span class="value-card-arrow">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+                  </svg>
+                </span>
+              </article>
+              <article class="value-card">
+                <div class="value-card-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M12 3L3 9l9 12 9-12-9-6z"/>
+                  </svg>
+                </div>
+                <h3 class="value-card-title">Ecommerce</h3>
+                <p class="value-card-desc">Smart, scalable e-commerce solutions that drive sales and seamless shopping experiences.</p>
+                <span class="value-card-arrow">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+                  </svg>
+                </span>
+              </article>
+            </div>
+            <div class="values-slide">
+              <article class="value-card">
+                <div class="value-card-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M12 3L3 9l9 12 9-12-9-6z"/>
+                  </svg>
+                </div>
+                <h3 class="value-card-title">Cosmetics &amp; Personal Care</h3>
+                <p class="value-card-desc">Natural, safe, and effective personal care and cosmetic products crafted for daily confidence and beauty.</p>
+                <span class="value-card-arrow">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+                  </svg>
+                </span>
+              </article>
+              <article class="value-card">
+                <div class="value-card-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M12 3L3 9l9 12 9-12-9-6z"/>
+                  </svg>
+                </div>
+                <h3 class="value-card-title">Packaging Solutions</h3>
+                <p class="value-card-desc">Innovative and reliable packaging tailored to protect and present your products.</p>
+                <span class="value-card-arrow">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+                  </svg>
+                </span>
+              </article>
+              <article class="value-card">
+                <div class="value-card-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M12 3L3 9l9 12 9-12-9-6z"/>
+                  </svg>
+                </div>
+                <h3 class="value-card-title">Steel Doors &amp; Windows</h3>
+                <p class="value-card-desc">Durable and stylish solutions crafted to combine lasting strength with modern design and functionality.</p>
+                <span class="value-card-arrow">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+                  </svg>
+                </span>
+              </article>
+            </div>
+            <div class="values-slide">
+              <article class="value-card">
+                <div class="value-card-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M12 3L3 9l9 12 9-12-9-6z"/>
+                  </svg>
+                </div>
+                <h3 class="value-card-title">Leather Products</h3>
+                <p class="value-card-desc">Premium leather goods combining durability, craftsmanship, and modern design for global markets.</p>
+                <span class="value-card-arrow">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+                  </svg>
+                </span>
+              </article>
+              <article class="value-card">
+                <div class="value-card-icon value-card-icon-circles">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <circle cx="12" cy="12" r="8"/>
+                    <circle cx="12" cy="12" r="2" fill="currentColor" stroke="none"/>
+                  </svg>
+                </div>
+                <h3 class="value-card-title">Ayurvedic Healthcare</h3>
+                <p class="value-card-desc">Authentic Ayurvedic remedies rooted in ancient wisdom, backed by modern research for holistic well-being.</p>
+                <span class="value-card-arrow">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+                  </svg>
+                </span>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Companies Section -->
+  <section class="companies-section" id="companies">
+    <div class="companies-container">
+      <div class="companies-header">
+        <span class="companies-tag">OUR COMPANIES</span>
+        <h2 class="companies-title">
+          Building global connections through<br>
+          <em class="companies-highlight">trusted trade excellence</em>
+        </h2>
+      </div>
+
+      <div class="companies-grid">
+        <article class="company-card company-card-hover">
+          <div class="company-card-front">
+            <h3 class="company-card-title">Oxikart</h3>
+            <p class="company-card-desc">Oxikart is a trusted online shopping platform offering premium-quality health, wellness, and daily essentials with a seamless and secure shopping experience.</p>
+            <hr class="company-card-divider">
+            <div class="company-card-footer">
+              <div class="company-card-icon" aria-hidden="true">
+                <img src="assets/service-13.svg" alt="">
+              </div>
+              <a href="#" class="company-card-btn">
+                View More
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="16" height="16">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="company-card-overlay">
+            <h3 class="company-card-title">Oxikart</h3>
+            <p class="company-card-desc">Oxikart is a trusted online shopping platform offering premium-quality health, wellness, and daily essentials with a seamless and secure shopping experience.</p>
+            <ul class="company-card-points">
+              <li>Offers authentic and certified products</li>
+              <li>Ensures fast and secure delivery</li>
+              <li>Provides competitive prices and customer support</li>
+            </ul>
+            <div class="company-card-overlay-footer">
+              <a href="#" class="company-card-btn company-card-btn-accent">
+                View More
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="16" height="16">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="company-card company-card-hover">
+          <div class="company-card-front">
+            <h3 class="company-card-title">We Six</h3>
+            <p class="company-card-desc">We Six is a leading manufacturer of high-quality corrugated cartons, providing durable and customized packaging solutions for various industries.</p>
+            <hr class="company-card-divider">
+            <div class="company-card-footer">
+              <div class="company-card-icon" aria-hidden="true">
+                <img src="assets/service-13.svg" alt="">
+              </div>
+              <a href="#" class="company-card-btn">
+                View More
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="16" height="16">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="company-card-overlay">
+            <h3 class="company-card-title">We Six</h3>
+            <p class="company-card-desc">We Six is a leading manufacturer of high-quality corrugated cartons, providing durable and customized packaging solutions for various industries.</p>
+            <ul class="company-card-points">
+              <li>Offers strong and sustainable packaging solutions</li>
+              <li>Delivers cartons in multiple sizes and configurations</li>
+              <li>Ensures timely production and client-focused service</li>
+            </ul>
+            <div class="company-card-overlay-footer">
+              <a href="#" class="company-card-btn company-card-btn-accent">
+                View More
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="16" height="16">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="company-card company-card-hover">
+          <div class="company-card-front">
+            <h3 class="company-card-title">Maharshi Ayur Lab Kerala Pvt Ltd</h3>
+            <p class="company-card-desc">A leading Ayurvedic manufacturer blending tradition with innovation. Maharshi Ayur Lab produces trusted health and wellness products rooted in authentic Ayurvedic science.</p>
+            <hr class="company-card-divider">
+            <div class="company-card-footer">
+              <div class="company-card-icon" aria-hidden="true">
+                <img src="assets/service-13.svg" alt="">
+              </div>
+              <a href="#" class="company-card-btn">
+                View More
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="16" height="16">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="company-card-overlay">
+            <h3 class="company-card-title">Maharshi Ayur Lab Kerala Pvt Ltd</h3>
+            <p class="company-card-desc">A leading Ayurvedic manufacturer blending tradition with innovation. Maharshi Ayur Lab produces trusted health and wellness products rooted in authentic Ayurvedic science.</p>
+            <ul class="company-card-points">
+              <li>Over 163 Ayurvedic products and 43 patented formulations.</li>
+              <li>Modern facility with advanced manufacturing capabilities.</li>
+              <li>Wide range from capsules to herbal jams and health drinks.</li>
+            </ul>
+            <div class="company-card-overlay-footer">
+              <a href="#" class="company-card-btn company-card-btn-accent">
+                View More
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="16" height="16">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="company-card company-card-hover">
+          <div class="company-card-front">
+            <h3 class="company-card-title">Maxwell Link</h3>
+            <p class="company-card-desc">Maxwell Link is a global trading company specializing in the import and export of high-quality products, ensuring reliability, timely delivery, and strong partnerships.</p>
+            <hr class="company-card-divider">
+            <div class="company-card-footer">
+              <div class="company-card-icon" aria-hidden="true">
+                <img src="assets/service-13.svg" alt="">
+              </div>
+              <a href="#" class="company-card-btn">
+                View More
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="16" height="16">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="company-card-overlay">
+            <h3 class="company-card-title">Maxwell Link</h3>
+            <p class="company-card-desc">Maxwell Link is a global trading company specializing in the import and export of high-quality products, ensuring reliability, timely delivery, and strong partnerships.</p>
+            <ul class="company-card-points">
+              <li>Wide product sourcing and supply network</li>
+              <li>Fast and efficient international delivery</li>
+              <li>Strong focus on quality and customer satisfaction</li>
+            </ul>
+            <div class="company-card-overlay-footer">
+              <a href="#" class="company-card-btn company-card-btn-accent">
+                View More
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="16" height="16">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="companies-more">
+        <a href="#" class="btn btn-primary companies-more-btn">
+          View More
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="16" height="16">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Projects Section -->
+  <section class="projects-section" id="projects">
+    <div class="projects-container">
+      <div class="projects-intro">
+        <span class="projects-tag">OUR PROJECTS</span>
+        <h2 class="projects-title">
+          Let’s discover all our<br>
+          <em class="projects-highlight">recent projects</em>
+        </h2>
+        <p class="projects-desc">
+          Each venture and project under the Maharshi Group reflects our vision of innovation, quality, and sustainable growth.
+          From healthcare and wellness to technology, packaging, and lifestyle solutions, every initiative is built on a
+          foundation of trust and excellence. Together, they represent our ongoing commitment to enriching lives and shaping
+          a better, healthier future.
+        </p>
+      </div>
+
+      <div class="projects-list">
+        <article class="project-item">
+          <div class="project-media">
+            <img src="assets/anger-lux-388x388.png" alt="Angel Lux Design" />
+          </div>
+          <div class="project-content">
+            <h3 class="project-name">Angel Lux Design</h3>
+            <p class="project-text">Manufacturers of cosmetics, personal care products, and skin care products, etc.</p>
+          </div>
+        </article>
+
+        <article class="project-item">
+          <div class="project-media">
+            <img src="assets/fruit-mix-388x388.png" alt="Oxion Fruit Extraction" />
+          </div>
+          <div class="project-content">
+            <h3 class="project-name">Oxion Fruit Extraction</h3>
+            <p class="project-text">Fruit pulp, fruit crush, health drink, etc., with 200 ton freezing capacity.</p>
+          </div>
+        </article>
+
+        <article class="project-item">
+          <div class="project-media">
+            <img src="assets/oxikart-388x388.png" alt="Oxikart" />
+          </div>
+          <div class="project-content">
+            <h3 class="project-name">Oxikart</h3>
+            <p class="project-text">An innovative e-commerce platform bringing quality products closer to you, launching soon.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Ventures Section -->
+  <section class="ventures-section" id="ventures">
+    <div class="ventures-container">
+      <div class="ventures-header">
+        <span class="ventures-tag">OUR VENTURES</span>
+        <h2 class="ventures-title">
+          A Glimpse of <em class="ventures-highlight">Maharshi Group</em>
+        </h2>
+      </div>
+
+      <div class="ventures-grid">
+        <figure class="venture-item"><img src="assets/1-768x512.jpeg" alt="Maharshi facility" /></figure>
+        <figure class="venture-item"><img src="assets/3-1-1024x682.jpeg" alt="Maharshi production area" /></figure>
+        <figure class="venture-item"><img src="assets/4-1-1024x747.jpeg" alt="Maharshi production area" /></figure>
+        <figure class="venture-item"><img src="assets/5-1024x682.jpeg" alt="Maharshi lab area" /></figure>
+        <figure class="venture-item"><img src="assets/6-1024x682.jpeg" alt="Maharshi campus view" /></figure>
+        <figure class="venture-item"><img src="assets/7-1024x682.jpeg" alt="Maharshi building exterior" /></figure>
+        <figure class="venture-item"><img src="assets/16-1024x461.jpeg" alt="Maharshi branch building" /></figure>
+        <figure class="venture-item"><img src="assets/17-1024x747.jpeg" alt="Oxikart warehouse" /></figure>
+        <figure class="venture-item"><img src="assets/18-1024x746.jpeg" alt="Oxikart warehouse" /></figure>
+
+        <figure class="venture-item venture-row-break"><img src="assets/8-1024x768.jpeg" alt="Maharshi plant" /></figure>
+        <figure class="venture-item"><img src="assets/9-1024x682.jpeg" alt="Maharshi unit interior" /></figure>
+        <figure class="venture-item"><img src="assets/10-1024x682.jpeg" alt="Maharshi machinery section" /></figure>
+        <figure class="venture-item"><img src="assets/11-1024x682.jpeg" alt="Maharshi workspace" /></figure>
+        <figure class="venture-item"><img src="assets/12-1024x682.jpeg" alt="Maharshi branch building" /></figure>
+        <figure class="venture-item"><img src="assets/13-1024x768.jpeg" alt="Maharshi branch building" /></figure>
+        <figure class="venture-item"><img src="assets/14-1024x768.jpeg" alt="Maharshi branch building" /></figure>
+        <figure class="venture-item"><img src="assets/15-1024x461.jpeg" alt="Maharshi branch building" /></figure>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="footer-pattern" aria-hidden="true"></div>
+      <div class="footer-container">
+        <div class="footer-col footer-about">
+          <img src="assets/logo1.png" alt="Maharshi Group" class="footer-logo" />
+          <p class="footer-about-text">
+            Maharshi Group, established in 1987, is a diversified enterprise in Ayurvedic healthcare, research, trade,
+            manufacturing, and e-commerce-committed to quality, innovation, and enhancing lives with trusted products.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-title">Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#companies">Companies</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-title">Our Companies</h3>
+          <ul class="footer-links">
+            <li><a href="#">Maharshi Ayur Lab Kerala Pvt Ltd</a></li>
+            <li><a href="#">Vitae Up Research &amp; Remedies</a></li>
+            <li><a href="#">Oxion Angel Luxe</a></li>
+            <li><a href="#">Oxyma Health Care</a></li>
+            <li><a href="#">D2I Doors And Windows</a></li>
+            <li><a href="#">Oxikart</a></li>
+            <li><a href="#">Maxwell Link</a></li>
+            <li><a href="#">Max And Mark</a></li>
+            <li><a href="#">Oxion Fruit Extraction</a></li>
+            <li><a href="#">We Six</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-title">Contact Us</h3>
+          <ul class="footer-contact-list">
+            <li><i class="fa-regular fa-envelope"></i><span>maharshiayurlabkerala@gmail.com</span></li>
+            <li><i class="fa-solid fa-phone"></i><span>9961096701</span></li>
+            <li><i class="fa-solid fa-phone"></i><span>04852001228</span></li>
+          </ul>
+
+          <h3 class="footer-title footer-address-title">Our Address</h3>
+          <div class="footer-address">
+            <i class="fa-regular fa-building"></i>
+            <span>Maharshi Ayurlab Kerala Pvt. Ltd., Kottappady P. O., Ernakulam District, Kerala - 686692</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>All rights reserved © 2025 @ Maharshi Ayurlab Kerala</p>
+    </div>
+  </footer>
+
+  <button class="scroll-top" aria-label="Scroll to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+  <script src="script.js"></script>
+</body>
+
+</html>
