@@ -204,6 +204,40 @@ document.addEventListener('DOMContentLoaded', function () {
   observer.observe(aboutSection);
 });
 
+// Companies and Projects section entrance animations
+document.addEventListener('DOMContentLoaded', function () {
+  const companiesSection = document.querySelector('.companies-section');
+  const projectsSection = document.querySelector('.projects-section');
+
+  if (companiesSection) {
+    const companiesObserver = new IntersectionObserver(
+      (entries) => {
+        if (entries.some((entry) => entry.isIntersecting)) {
+          companiesSection.classList.add('companies-visible');
+          companiesObserver.disconnect();
+        }
+      },
+      { threshold: 0.16 }
+    );
+
+    companiesObserver.observe(companiesSection);
+  }
+
+  if (projectsSection) {
+    const projectsObserver = new IntersectionObserver(
+      (entries) => {
+        if (entries.some((entry) => entry.isIntersecting)) {
+          projectsSection.classList.add('projects-visible');
+          projectsObserver.disconnect();
+        }
+      },
+      { threshold: 0.16 }
+    );
+
+    projectsObserver.observe(projectsSection);
+  }
+});
+
 // Values section carousel — infinite loop through all cards in order
 document.addEventListener('DOMContentLoaded', function () {
   const track = document.getElementById('valuesTrack');

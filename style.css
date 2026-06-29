@@ -1006,6 +1006,42 @@ html {
   font-size: 15px;
 }
 
+/* Companies entrance animation */
+.companies-header,
+.companies-grid .company-card,
+.companies-more {
+  opacity: 0;
+  transform: translateY(26px);
+}
+
+.companies-section.companies-visible .companies-header {
+  animation: aboutFadeUp 0.7s ease forwards;
+}
+
+.companies-section.companies-visible .companies-grid .company-card {
+  animation: aboutFadeUp 0.7s ease forwards;
+}
+
+.companies-section.companies-visible .companies-grid .company-card:nth-child(1) {
+  animation-delay: 0.08s;
+}
+
+.companies-section.companies-visible .companies-grid .company-card:nth-child(2) {
+  animation-delay: 0.16s;
+}
+
+.companies-section.companies-visible .companies-grid .company-card:nth-child(3) {
+  animation-delay: 0.24s;
+}
+
+.companies-section.companies-visible .companies-grid .company-card:nth-child(4) {
+  animation-delay: 0.32s;
+}
+
+.companies-section.companies-visible .companies-more {
+  animation: aboutFadeUp 0.7s ease 0.4s forwards;
+}
+
 /* ========================
    Our Projects Section
 ======================== */
@@ -1108,6 +1144,33 @@ html {
   font-size: 18px;
   line-height: 1.45;
   color: rgba(255, 255, 255, 0.95);
+}
+
+/* Projects entrance animation */
+.projects-intro,
+.projects-list .project-item {
+  opacity: 0;
+  transform: translateY(26px);
+}
+
+.projects-section.projects-visible .projects-intro {
+  animation: aboutFadeUp 0.7s ease forwards;
+}
+
+.projects-section.projects-visible .projects-list .project-item {
+  animation: aboutFadeUp 0.7s ease forwards;
+}
+
+.projects-section.projects-visible .projects-list .project-item:nth-child(1) {
+  animation-delay: 0.08s;
+}
+
+.projects-section.projects-visible .projects-list .project-item:nth-child(2) {
+  animation-delay: 0.16s;
+}
+
+.projects-section.projects-visible .projects-list .project-item:nth-child(3) {
+  animation-delay: 0.24s;
 }
 
 /* ========================
