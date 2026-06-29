@@ -778,6 +778,26 @@ html {
   font-weight: 500
 }
 
+/* Values section scroll reveal */
+.values-content,
+.values-cards-wrap,
+.values-nav {
+  opacity: 0;
+  transform: translateY(26px);
+}
+
+.values-section.values-visible .values-content {
+  animation: aboutFadeUp 0.7s ease forwards;
+}
+
+.values-section.values-visible .values-nav {
+  animation: aboutFadeUp 0.7s ease 0.08s forwards;
+}
+
+.values-section.values-visible .values-cards-wrap {
+  animation: aboutFadeUp 0.7s ease 0.16s forwards;
+}
+
 .values-cards-wrap {
   position: relative;
   margin-top: -190px;
@@ -1246,6 +1266,32 @@ html {
   flex: 0 0 calc((100% - 56px) / 5);
 }
 
+/* Ventures section scroll reveal */
+.ventures-header,
+.ventures-grid .venture-item {
+  opacity: 0;
+  transform: translateY(26px);
+}
+
+.ventures-section.ventures-visible .ventures-header {
+  animation: aboutFadeUp 0.7s ease forwards;
+}
+
+.ventures-section.ventures-visible .ventures-grid .venture-item {
+  animation: aboutFadeUp 0.65s ease forwards;
+}
+
+.ventures-section.ventures-visible .ventures-grid .venture-item:nth-child(1) { animation-delay: 0.04s; }
+.ventures-section.ventures-visible .ventures-grid .venture-item:nth-child(2) { animation-delay: 0.08s; }
+.ventures-section.ventures-visible .ventures-grid .venture-item:nth-child(3) { animation-delay: 0.12s; }
+.ventures-section.ventures-visible .ventures-grid .venture-item:nth-child(4) { animation-delay: 0.16s; }
+.ventures-section.ventures-visible .ventures-grid .venture-item:nth-child(5) { animation-delay: 0.20s; }
+.ventures-section.ventures-visible .ventures-grid .venture-item:nth-child(6) { animation-delay: 0.24s; }
+.ventures-section.ventures-visible .ventures-grid .venture-item:nth-child(7) { animation-delay: 0.28s; }
+.ventures-section.ventures-visible .ventures-grid .venture-item:nth-child(8) { animation-delay: 0.32s; }
+.ventures-section.ventures-visible .ventures-grid .venture-item:nth-child(9) { animation-delay: 0.36s; }
+.ventures-section.ventures-visible .ventures-grid .venture-item:nth-child(10) { animation-delay: 0.40s; }
+
 .venture-item {
   margin: 0;
   border: 1px solid #e1e1e1;
@@ -1294,6 +1340,26 @@ html {
   display: grid;
   grid-template-columns: 1.25fr 0.7fr 0.95fr 1.15fr;
   gap: 40px;
+}
+
+/* Footer section scroll reveal */
+.footer-col,
+.footer-bottom {
+  opacity: 0;
+  transform: translateY(24px);
+}
+
+.site-footer.footer-visible .footer-col {
+  animation: aboutFadeUp 0.7s ease forwards;
+}
+
+.site-footer.footer-visible .footer-col:nth-child(1) { animation-delay: 0.06s; }
+.site-footer.footer-visible .footer-col:nth-child(2) { animation-delay: 0.14s; }
+.site-footer.footer-visible .footer-col:nth-child(3) { animation-delay: 0.22s; }
+.site-footer.footer-visible .footer-col:nth-child(4) { animation-delay: 0.30s; }
+
+.site-footer.footer-visible .footer-bottom {
+  animation: aboutFadeUp 0.7s ease 0.38s forwards;
 }
 
 .footer-col {

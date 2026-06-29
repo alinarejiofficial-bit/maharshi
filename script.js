@@ -206,8 +206,25 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // Companies and Projects section entrance animations
 document.addEventListener('DOMContentLoaded', function () {
+  const valuesSection = document.querySelector('.values-section');
   const companiesSection = document.querySelector('.companies-section');
   const projectsSection = document.querySelector('.projects-section');
+  const venturesSection = document.querySelector('.ventures-section');
+  const footerSection = document.querySelector('.site-footer');
+
+  if (valuesSection) {
+    const valuesObserver = new IntersectionObserver(
+      (entries) => {
+        if (entries.some((entry) => entry.isIntersecting)) {
+          valuesSection.classList.add('values-visible');
+          valuesObserver.disconnect();
+        }
+      },
+      { threshold: 0.14 }
+    );
+
+    valuesObserver.observe(valuesSection);
+  }
 
   if (companiesSection) {
     const companiesObserver = new IntersectionObserver(
@@ -235,6 +252,34 @@ document.addEventListener('DOMContentLoaded', function () {
     );
 
     projectsObserver.observe(projectsSection);
+  }
+
+  if (venturesSection) {
+    const venturesObserver = new IntersectionObserver(
+      (entries) => {
+        if (entries.some((entry) => entry.isIntersecting)) {
+          venturesSection.classList.add('ventures-visible');
+          venturesObserver.disconnect();
+        }
+      },
+      { threshold: 0.12 }
+    );
+
+    venturesObserver.observe(venturesSection);
+  }
+
+  if (footerSection) {
+    const footerObserver = new IntersectionObserver(
+      (entries) => {
+        if (entries.some((entry) => entry.isIntersecting)) {
+          footerSection.classList.add('footer-visible');
+          footerObserver.disconnect();
+        }
+      },
+      { threshold: 0.1 }
+    );
+
+    footerObserver.observe(footerSection);
   }
 });
 
