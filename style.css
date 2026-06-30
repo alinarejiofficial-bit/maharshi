@@ -1645,6 +1645,11 @@ html {
   line-height: 1.35;
 }
 
+.companies-listing-link {
+  color: inherit;
+  text-decoration: none;
+}
+
 .companies-listing-plus {
   margin-top: auto;
   width: 36px;
@@ -1656,6 +1661,10 @@ html {
   font-size: 24px;
   font-weight: 400;
   line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
   cursor: pointer;
 }
 
@@ -1696,6 +1705,193 @@ html {
 
   .companies-listing-card h3 {
     font-size: 20px;
+  }
+}
+
+/* ========================
+   Company Detail Page
+======================== */
+.company-detail-section {
+  background: #f5f5f5;
+  padding: 80px 0 96px;
+}
+
+.company-detail-container {
+  width: min(1360px, calc(100% - 54px));
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 58% 42%;
+  gap: 36px;
+  align-items: start;
+}
+
+.company-detail-tag {
+  display: inline-block;
+  margin-bottom: 13px;
+  color: #3a3f42;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.company-detail-content h2 {
+  margin: 0 0 12px 0;
+  color: #1a1f22;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.company-detail-content h3 {
+  margin: 0 0 20px;
+  color: #1f262a;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+.company-detail-content p {
+  margin: 0 0 20px;
+  color: #2f3538;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.company-detail-content h4 {
+  margin: 0 0 10px;
+  color: #1e2327;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.company-detail-points {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 6px;
+}
+
+.company-detail-points li {
+  position: relative;
+  padding-left: 22px;
+  color: #1d2326;
+  font-size: 18px;
+  line-height: 1.45;
+}
+
+.company-detail-points li::before {
+  content: "✦";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 12px;
+}
+
+.company-detail-side {
+  display: grid;
+  gap: 14px;
+}
+
+.company-detail-side-card {
+  background: #88c040;
+  color: #ffffff;
+  border-radius: 8px;
+  padding: 18px 20px 16px;
+}
+
+.company-detail-side-card i {
+  font-size: 25px;
+  margin-bottom: 8px;
+  display: inline-block;
+  font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+
+.company-detail-side-card h5 {
+  margin: 0 0 6px;
+  font-family: "DM Sans", Sans-serif;
+  font-size: 23px;
+  font-weight: 600;
+}
+
+.company-detail-side-card p {
+  margin: 0 0 12px;
+  line-height: 1.55;
+  font-family: "DM Sans", Sans-serif;
+    font-size: 17px;
+}
+
+.company-detail-arrow {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: relative;
+}
+
+.company-detail-arrow::before {
+  content: "";
+  position: absolute;
+  left: 3px;
+  bottom: 3px;
+  width: 27px;
+  border-top: 2px solid rgba(255, 255, 255, 0.9);
+  transform: rotate(-45deg);
+  transform-origin: left center;
+}
+
+.company-detail-arrow::after {
+  content: "";
+  position: absolute;
+  right: 3px;
+  top: 3px;
+  width: 11px;
+  height: 11px;
+  border-top: 2px solid rgba(255, 255, 255, 0.9);
+  border-right: 2px solid rgba(255, 255, 255, 0.9);
+}
+
+@media (max-width: 1100px) {
+  .company-detail-container {
+    width: calc(100% - 30px);
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 760px) {
+  .company-detail-section {
+    padding: 48px 0 62px;
+  }
+
+  .company-detail-tag {
+    font-size: 15px;
+  }
+
+  .company-detail-content h2 {
+    font-size: 34px;
+  }
+
+  .company-detail-content h3 {
+    font-size: 30px;
+  }
+
+  .company-detail-content p {
+    font-size: 16px;
+  }
+
+  .company-detail-content h4 {
+    font-size: 22px;
+  }
+
+  .company-detail-points li {
+    font-size: 16px;
+  }
+
+  .company-detail-side-card h5 {
+    font-size: 24px;
+  }
+
+  .company-detail-side-card p {
+    font-size: 15px;
   }
 }
 
