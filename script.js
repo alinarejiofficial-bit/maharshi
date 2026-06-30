@@ -186,6 +186,104 @@ document.addEventListener('DOMContentLoaded', function () {
   startVenturesAutoScroll();
 });
 
+// Ventures image lightbox
+document.addEventListener('DOMContentLoaded', function () {
+  const venturesSection = document.querySelector('.ventures-section');
+  const lightbox = document.getElementById('venturesLightbox');
+  const lightboxImage = document.getElementById('venturesLightboxImage');
+  const lightboxCount = document.getElementById('venturesLightboxCount');
+  const closeBtn = document.getElementById('venturesLightboxClose');
+  const prevBtn = document.getElementById('venturesLightboxPrev');
+  const nextBtn = document.getElementById('venturesLightboxNext');
+
+  if (!venturesSection || !lightbox || !lightboxImage || !lightboxCount || !closeBtn || !prevBtn || !nextBtn) {
+    return;
+  }
+
+  let galleryImages = [];
+  let currentIndex = 0;
+
+  function collectGalleryImages() {
+    const seen = new Set();
+    galleryImages = [];
+
+    venturesSection.querySelectorAll('.ventures-grid .venture-item img').forEach((img) => {
+      const src = img.getAttribute('src');
+      if (!src || seen.has(src)) return;
+      seen.add(src);
+      galleryImages.push({
+        src: src,
+        alt: img.getAttribute('alt') || 'Venture image',
+      });
+    });
+  }
+
+  function renderImage() {
+    if (!galleryImages.length) return;
+    const image = galleryImages[currentIndex];
+    lightboxImage.src = image.src;
+    lightboxImage.alt = image.alt;
+    lightboxCount.textContent = String(currentIndex + 1);
+  }
+
+  function openLightbox(index) {
+    if (!galleryImages.length) return;
+    currentIndex = (index + galleryImages.length) % galleryImages.length;
+    renderImage();
+    lightbox.classList.add('is-open');
+    lightbox.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeLightbox() {
+    lightbox.classList.remove('is-open');
+    lightbox.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+  }
+
+  function goNext() {
+    if (!galleryImages.length) return;
+    currentIndex = (currentIndex + 1) % galleryImages.length;
+    renderImage();
+  }
+
+  function goPrev() {
+    if (!galleryImages.length) return;
+    currentIndex = (currentIndex - 1 + galleryImages.length) % galleryImages.length;
+    renderImage();
+  }
+
+  venturesSection.addEventListener('click', function (event) {
+    const clickedImage = event.target.closest('.venture-item img');
+    if (!clickedImage) return;
+
+    collectGalleryImages();
+    if (!galleryImages.length) return;
+
+    const clickedSrc = clickedImage.getAttribute('src');
+    const foundIndex = galleryImages.findIndex((image) => image.src === clickedSrc);
+    openLightbox(foundIndex >= 0 ? foundIndex : 0);
+  });
+
+  closeBtn.addEventListener('click', closeLightbox);
+  prevBtn.addEventListener('click', goPrev);
+  nextBtn.addEventListener('click', goNext);
+
+  lightbox.addEventListener('click', function (event) {
+    if (event.target === lightbox) {
+      closeLightbox();
+    }
+  });
+
+  document.addEventListener('keydown', function (event) {
+    if (!lightbox.classList.contains('is-open')) return;
+
+    if (event.key === 'Escape') closeLightbox();
+    if (event.key === 'ArrowRight') goNext();
+    if (event.key === 'ArrowLeft') goPrev();
+  });
+});
+
 // Scroll-based section reveal animations (toggle on enter/leave)
 document.addEventListener('DOMContentLoaded', function () {
   function setupScrollReveal(selector, visibleClass, threshold) {
