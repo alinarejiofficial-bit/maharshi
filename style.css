@@ -582,16 +582,16 @@ html {
 
 .legacy-img-one {
   top: 22px;
-  left: 48px;
+  left: -70px;
 }
 
 .legacy-img-two {
   top: 22px;
-  right: 48px;
+  right: 40px;
 }
 
 .legacy-img-three {
-  top: 214px;
+  top: 220px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 2;
@@ -789,6 +789,215 @@ html {
 
   .about-legacy-contact-number {
     font-size: 16px;
+  }
+}
+
+/* ========================
+   About Commitment Section
+======================== */
+.about-commitment {
+  background:
+    linear-gradient(rgba(0, 52, 53, 0.94), rgba(0, 52, 53, 0.94)),
+    url('./assets/bg.png') center/cover no-repeat;
+  padding: 70px 0 88px;
+}
+
+.about-commitment-card {
+  width: min(1360px, calc(100% - 54px));
+  margin: 0 auto;
+  background: #f6f6f6;
+  border-radius: 30px;
+  padding: 30px 30px 26px;
+}
+
+.about-commitment-top {
+  display: grid;
+  grid-template-columns: 41% 59%;
+  gap: 28px;
+  align-items: start;
+}
+
+.about-commitment-tag {
+  display: inline-flex;
+  align-items: center;
+  background: #edf0e7;
+  color: #94ab63;
+  border-radius: 999px;
+  padding: 9px 14px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+.about-commitment-content{
+  margin-top: 50px;
+}
+
+.about-commitment-title {
+  margin: 0 0 16px;
+  color: #000;
+  font-size: 42px;
+  font-weight: 400;
+  line-height: 1.2381;
+  font-family: "DM Sans", Sans-serif;
+}
+
+.about-commitment-title em {
+  color: #d93035;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-weight: 700;
+}
+
+.about-commitment-text {
+  margin: 0;
+  color: #272727;
+  font-size: 17px;
+  line-height: 1.58;
+}
+
+.about-commitment-image {
+  margin: 0;
+  border-radius: 0;
+  overflow: hidden;
+}
+
+.about-commitment-image img {
+  width: 100%;
+  height: 100%;
+  min-height: 430px;
+  object-fit: cover;
+  display: block;
+}
+
+.about-commitment-pillars {
+  margin-top: 28px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.about-commitment-pillar {
+  background: #003f42;
+  color: #ffffff;
+  border-radius: 10px;
+  padding: 24px 22px 22px;
+  min-height: 252px;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-commitment-pillar > i {
+  font-size: 38px;
+  color: #e8ffff;
+  margin-bottom: 16px;
+}
+
+.about-commitment-pillar h3 {
+  margin: 0 0 10px;
+  font-size: 42px;
+  line-height: 1.25;
+  font-weight: 600;
+}
+
+.about-commitment-pillar p {
+  margin: 0;
+  font-size: 24px;
+  line-height: 1.65;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.about-commitment-arrow {
+  margin-top: auto;
+  display: inline-flex;
+  color: rgba(255, 255, 255, 0.86);
+  font-size: 42px;
+}
+
+.about-commitment-bottom {
+  margin-top: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.about-commitment-bottom p {
+  margin: 0;
+  font-size: 35px;
+  color: #1f1f1f;
+  line-height: 1.5;
+}
+
+.about-commitment-btn {
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  min-width: 190px;
+  border-radius: 999px;
+  padding: 15px 30px;
+  background: #88c040;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+@media (max-width: 1100px) {
+  .about-commitment-card {
+    width: calc(100% - 30px);
+    padding: 24px 18px 22px;
+  }
+
+  .about-commitment-top {
+    grid-template-columns: 1fr;
+  }
+
+  .about-commitment-image img {
+    min-height: 300px;
+  }
+
+  .about-commitment-pillars {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 760px) {
+  .about-commitment {
+    padding: 46px 0 60px;
+  }
+
+  .about-commitment-title {
+    font-size: clamp(1.6rem, 8vw, 2.2rem);
+  }
+
+  .about-commitment-text {
+    font-size: 15px;
+  }
+
+  .about-commitment-pillar h3 {
+    font-size: 30px;
+  }
+
+  .about-commitment-pillar p {
+    font-size: 16px;
+  }
+
+  .about-commitment-arrow {
+    font-size: 28px;
+  }
+
+  .about-commitment-bottom p {
+    font-size: 16px;
+  }
+
+  .about-commitment-btn {
+    min-width: 150px;
+    font-size: 15px;
+    padding: 12px 22px;
   }
 }
 
