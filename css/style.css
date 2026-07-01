@@ -50,13 +50,27 @@ html {
   top: 0;
   right: 0;
   bottom: 0;
-  width: 63%;
+  width: 68%;
   height: 100%;
   object-fit: cover;
   object-position: 84% 44%;
   display: block;
-  -webkit-mask-image: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.18) 14%, black 32%);
-  mask-image: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.18) 14%, black 32%);
+  -webkit-mask-image: linear-gradient(
+    125deg,
+    transparent 0%,
+    rgba(0, 0, 0, 0.12) 16%,
+    rgba(0, 0, 0, 0.45) 30%,
+    rgba(0, 0, 0, 0.82) 42%,
+    black 52%
+  );
+  mask-image: linear-gradient(
+    125deg,
+    transparent 0%,
+    rgba(0, 0, 0, 0.12) 16%,
+    rgba(0, 0, 0, 0.45) 30%,
+    rgba(0, 0, 0, 0.82) 42%,
+    black 52%
+  );
 }
 
 .hero-bg-gradient {
@@ -64,14 +78,47 @@ html {
   inset: 0;
   z-index: 1;
   pointer-events: none;
+}
+
+.hero-bg-gradient::before {
+  content: '';
+  position: absolute;
+  inset: 0;
   background: linear-gradient(
-    90deg,
+    125deg,
     var(--hero-ivory) 0%,
-    var(--hero-warm-white) 12%,
-    var(--hero-cream) 26%,
-    rgba(253, 251, 247, 0.92) 36%,
-    rgba(250, 246, 239, 0.55) 42%,
-    transparent 48%
+    var(--hero-warm-white) 16%,
+    var(--hero-cream) 30%,
+    rgba(253, 251, 247, 0.98) 40%,
+    rgba(250, 246, 239, 0.82) 48%,
+    rgba(247, 241, 232, 0.52) 54%,
+    rgba(243, 236, 224, 0.22) 60%,
+    rgba(240, 232, 218, 0.06) 64%,
+    transparent 70%
+  );
+}
+
+.hero-bg-gradient::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  -webkit-mask-image: linear-gradient(
+    125deg,
+    transparent 34%,
+    rgba(0, 0, 0, 0.35) 46%,
+    rgba(0, 0, 0, 0.75) 54%,
+    rgba(0, 0, 0, 0.35) 62%,
+    transparent 72%
+  );
+  mask-image: linear-gradient(
+    125deg,
+    transparent 34%,
+    rgba(0, 0, 0, 0.35) 46%,
+    rgba(0, 0, 0, 0.75) 54%,
+    rgba(0, 0, 0, 0.35) 62%,
+    transparent 72%
   );
 }
 
@@ -652,18 +699,43 @@ html {
   .hero-bg-image {
     width: 100%;
     object-position: 72% 44%;
-    -webkit-mask-image: none;
-    mask-image: none;
+    -webkit-mask-image: linear-gradient(
+      160deg,
+      transparent 0%,
+      rgba(0, 0, 0, 0.25) 28%,
+      black 48%
+    );
+    mask-image: linear-gradient(
+      160deg,
+      transparent 0%,
+      rgba(0, 0, 0, 0.25) 28%,
+      black 48%
+    );
   }
 
-  .hero-bg-gradient {
+  .hero-bg-gradient::before {
     background: linear-gradient(
-      180deg,
+      165deg,
       var(--hero-ivory) 0%,
-      rgba(253, 251, 247, 0.96) 28%,
-      rgba(250, 246, 239, 0.78) 52%,
-      rgba(247, 241, 232, 0.4) 72%,
+      rgba(253, 251, 247, 0.96) 32%,
+      rgba(250, 246, 239, 0.72) 52%,
+      rgba(247, 241, 232, 0.35) 72%,
       transparent 100%
+    );
+  }
+
+  .hero-bg-gradient::after {
+    -webkit-mask-image: linear-gradient(
+      165deg,
+      transparent 30%,
+      rgba(0, 0, 0, 0.5) 50%,
+      transparent 75%
+    );
+    mask-image: linear-gradient(
+      165deg,
+      transparent 30%,
+      rgba(0, 0, 0, 0.5) 50%,
+      transparent 75%
     );
   }
 
