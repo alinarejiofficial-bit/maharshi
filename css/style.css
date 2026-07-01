@@ -48,13 +48,16 @@ html {
 
 .hero-bg-image {
   position: absolute;
-  inset: 0;
-  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 58%;
   height: 100%;
   object-fit: cover;
-  object-position: 76% 42%;
+  object-position: 84% 44%;
   display: block;
-  filter: saturate(1.08) contrast(1.04) brightness(1.03);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.25) 12%, black 26%);
+  mask-image: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.25) 12%, black 26%);
 }
 
 .hero-bg-warmth {
@@ -686,8 +689,10 @@ html {
   }
 
   .hero-bg-image {
-    object-position: 68% 40%;
-    filter: saturate(1.05) contrast(1.02) brightness(1.02);
+    width: 100%;
+    object-position: 72% 44%;
+    -webkit-mask-image: none;
+    mask-image: none;
   }
 
   .hero-bg-warmth {
