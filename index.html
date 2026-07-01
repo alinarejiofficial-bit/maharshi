@@ -9,68 +9,142 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <div class="hero">
-    <div class="navbar-container">
-      <nav class="navbar">
-        <div class="logo-container">
-          <img src="assets/logo1.png" alt="Maharshi Ayur Lab" class="logo-img">
-        </div>
-
-        <ul class="nav-links">
-          <li><a href="#" class="active">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="companies.html">Companies</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-
-        <div class="nav-right">
-          <div class="contact-info">
-            <div class="phone-icon">
-              <i class="fa-solid fa-phone"></i>
-            </div>
-            <div class="contact-text">
-              <span class="label">Have Any Questions?</span>
-              <span class="number">+91 996 109 6701</span>
-            </div>
-          </div>
-
-          <div class="divider"></div>
-
-          <a href="#" class="btn btn-primary">
-            Get in Touch
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-              stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
-            </svg>
-          </a>
-        </div>
-      </nav>
+    <div class="hero-bg" aria-hidden="true">
+      <img src="assets/images/bbackground.png" alt="" class="hero-bg-image">
+      <div class="hero-bg-gradient"></div>
     </div>
 
-    <div class="hero-content">
-      <div class="subtitle">MAHARSHI GROUP</div>
-      <h1 class="title">Empowering Industries With<br>Trust and Innovation</h1>
-      <p class="description">Blending Ayurveda with innovation to create a legacy of wellness and<br>progress.</p>
+    <div class="hero-inner">
+      <div class="navbar-container">
+        <nav class="navbar">
+          <div class="logo-container">
+            <img src="assets/images/logo1.png" alt="Maharshi Ayur Lab" class="logo-img">
+          </div>
 
-      <div class="hero-buttons">
-        <a href="about.html" class="btn btn-primary">
-          About Us
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-            stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+          <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="companies.html">Companies</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+
+          <div class="nav-right">
+            <div class="contact-info">
+              <div class="phone-icon">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div class="contact-text">
+                <span class="label">Have Any Questions?</span>
+                <span class="number">+91 996 109 6701</span>
+              </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <a href="contact.html" class="btn btn-primary">
+              Get in Touch
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+              </svg>
+            </a>
+          </div>
+        </nav>
+      </div>
+
+      <div class="hero-body">
+        <div class="hero-leaf-decor" aria-hidden="true">
+          <svg viewBox="0 0 280 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M40 280C40 280 20 200 60 140C100 80 160 60 200 80" stroke="#7CC242" stroke-width="1.2" stroke-opacity="0.25"/>
+            <path d="M200 80C200 80 180 120 140 160C100 200 80 240 60 280" stroke="#7CC242" stroke-width="1.2" stroke-opacity="0.2"/>
+            <ellipse cx="130" cy="170" rx="55" ry="90" transform="rotate(-25 130 170)" stroke="#7CC242" stroke-width="1" stroke-opacity="0.18"/>
+            <path d="M130 80C130 80 110 130 120 180C130 230 140 260 150 290" stroke="#7CC242" stroke-width="1" stroke-opacity="0.22"/>
+            <path d="M90 200C110 180 130 170 150 175" stroke="#7CC242" stroke-width="0.8" stroke-opacity="0.15"/>
+            <path d="M100 230C120 215 140 210 160 218" stroke="#7CC242" stroke-width="0.8" stroke-opacity="0.12"/>
           </svg>
-        </a>
-        <a href="companies.html" class="btn btn-primary">
-          Our Companies
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-            stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
-          </svg>
-        </a>
+        </div>
+
+        <div class="hero-content">
+          <div class="hero-label">
+            <svg class="hero-label-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2C12 2 6 8 6 14C6 17.3 8.7 20 12 20C15.3 20 18 17.3 18 14C18 8 12 2 12 2Z" stroke="#7CC242" stroke-width="1.5" stroke-linejoin="round"/>
+              <path d="M12 20V12" stroke="#7CC242" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+            <span>MAHARSHI GROUP</span>
+          </div>
+
+          <h1 class="hero-title">
+            Empowering Industries with Trust and<br>
+            <em class="hero-title-accent">Innovation</em>
+          </h1>
+
+          <p class="hero-desc">Blending Ayurveda with innovation to create a legacy of wellness and progress.</p>
+
+          <div class="hero-buttons">
+            <a href="about.html" class="btn btn-primary">
+              About Us
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+              </svg>
+            </a>
+            <a href="companies.html" class="btn btn-outline">
+              Our Companies
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <div class="hero-stat-icon">
+            <i class="fa-solid fa-mortar-pestle"></i>
+          </div>
+          <div class="hero-stat-text">
+            <strong class="hero-stat-num">25+</strong>
+            <span class="hero-stat-label">Years of Excellence</span>
+            <span class="hero-stat-desc">A legacy built on trust and expertise</span>
+          </div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-icon">
+            <i class="fa-solid fa-building"></i>
+          </div>
+          <div class="hero-stat-text">
+            <strong class="hero-stat-num">5+</strong>
+            <span class="hero-stat-label">Companies</span>
+            <span class="hero-stat-desc">Diverse businesses driving growth</span>
+          </div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-icon">
+            <i class="fa-solid fa-leaf"></i>
+          </div>
+          <div class="hero-stat-text">
+            <strong class="hero-stat-num">100%</strong>
+            <span class="hero-stat-label">Quality Commitment</span>
+            <span class="hero-stat-desc">Ensuring the best in everything we do</span>
+          </div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-icon">
+            <i class="fa-solid fa-users"></i>
+          </div>
+          <div class="hero-stat-text">
+            <strong class="hero-stat-num">500+</strong>
+            <span class="hero-stat-label">Happy Clients</span>
+            <span class="hero-stat-desc">Strong relationships built on trust</span>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -82,10 +156,10 @@
       <!-- Left: Images -->
       <div class="about-images">
         <div class="about-img-top">
-          <img src="assets/8-350x395.jpeg" alt="Maharshi Group Building" />
+          <img src="assets/images/8-350x395.jpeg" alt="Maharshi Group Building" />
         </div>
         <div class="about-img-bottom">
-          <img src="assets/WhatsApp-Image-2025-10-23-at-2.42.13-PM-379x428.jpeg" alt="Maharshi Group Campus" />
+          <img src="assets/images/WhatsApp-Image-2025-10-23-at-2.42.13-PM-379x428.jpeg" alt="Maharshi Group Campus" />
         </div>
           <div class="about-badge">
           <div class="badge-top">
@@ -329,7 +403,7 @@
             <hr class="company-card-divider">
             <div class="company-card-footer">
               <div class="company-card-icon" aria-hidden="true">
-                <img src="assets/service-13.svg" alt="">
+                <img src="assets/images/service-13.svg" alt="">
               </div>
               <a href="#" class="company-card-btn">
                 View More
@@ -365,7 +439,7 @@
             <hr class="company-card-divider">
             <div class="company-card-footer">
               <div class="company-card-icon" aria-hidden="true">
-                <img src="assets/service-13.svg" alt="">
+                <img src="assets/images/service-13.svg" alt="">
               </div>
               <a href="#" class="company-card-btn">
                 View More
@@ -401,7 +475,7 @@
             <hr class="company-card-divider">
             <div class="company-card-footer">
               <div class="company-card-icon" aria-hidden="true">
-                <img src="assets/service-13.svg" alt="">
+                <img src="assets/images/service-13.svg" alt="">
               </div>
               <a href="#" class="company-card-btn">
                 View More
@@ -437,7 +511,7 @@
             <hr class="company-card-divider">
             <div class="company-card-footer">
               <div class="company-card-icon" aria-hidden="true">
-                <img src="assets/service-13.svg" alt="">
+                <img src="assets/images/service-13.svg" alt="">
               </div>
               <a href="#" class="company-card-btn">
                 View More
@@ -497,7 +571,7 @@
       <div class="projects-list">
         <article class="project-item">
           <div class="project-media">
-            <img src="assets/anger-lux-388x388.png" alt="Angel Lux Design" />
+            <img src="assets/images/anger-lux-388x388.png" alt="Angel Lux Design" />
           </div>
           <div class="project-content">
             <h3 class="project-name">Angel Lux Design</h3>
@@ -507,7 +581,7 @@
 
         <article class="project-item">
           <div class="project-media">
-            <img src="assets/fruit-mix-388x388.png" alt="Oxion Fruit Extraction" />
+            <img src="assets/images/fruit-mix-388x388.png" alt="Oxion Fruit Extraction" />
           </div>
           <div class="project-content">
             <h3 class="project-name">Oxion Fruit Extraction</h3>
@@ -517,7 +591,7 @@
 
         <article class="project-item">
           <div class="project-media">
-            <img src="assets/oxikart-388x388.png" alt="Oxikart" />
+            <img src="assets/images/oxikart-388x388.png" alt="Oxikart" />
           </div>
           <div class="project-content">
             <h3 class="project-name">Oxikart</h3>
@@ -539,24 +613,24 @@
       </div>
 
       <div class="ventures-grid">
-        <figure class="venture-item"><img src="assets/1-768x512.jpeg" alt="Maharshi facility" /></figure>
-        <figure class="venture-item"><img src="assets/3-1-1024x682.jpeg" alt="Maharshi production area" /></figure>
-        <figure class="venture-item"><img src="assets/4-1-1024x747.jpeg" alt="Maharshi production area" /></figure>
-        <figure class="venture-item"><img src="assets/5-1024x682.jpeg" alt="Maharshi lab area" /></figure>
-        <figure class="venture-item"><img src="assets/6-1024x682.jpeg" alt="Maharshi campus view" /></figure>
-        <figure class="venture-item"><img src="assets/7-1024x682.jpeg" alt="Maharshi building exterior" /></figure>
-        <figure class="venture-item"><img src="assets/16-1024x461.jpeg" alt="Maharshi branch building" /></figure>
-        <figure class="venture-item"><img src="assets/17-1024x747.jpeg" alt="Oxikart warehouse" /></figure>
-        <figure class="venture-item"><img src="assets/18-1024x746.jpeg" alt="Oxikart warehouse" /></figure>
+        <figure class="venture-item"><img src="assets/images/1-768x512.jpeg" alt="Maharshi facility" /></figure>
+        <figure class="venture-item"><img src="assets/images/3-1-1024x682.jpeg" alt="Maharshi production area" /></figure>
+        <figure class="venture-item"><img src="assets/images/4-1-1024x747.jpeg" alt="Maharshi production area" /></figure>
+        <figure class="venture-item"><img src="assets/images/5-1024x682.jpeg" alt="Maharshi lab area" /></figure>
+        <figure class="venture-item"><img src="assets/images/6-1024x682.jpeg" alt="Maharshi campus view" /></figure>
+        <figure class="venture-item"><img src="assets/images/7-1024x682.jpeg" alt="Maharshi building exterior" /></figure>
+        <figure class="venture-item"><img src="assets/images/16-1024x461.jpeg" alt="Maharshi branch building" /></figure>
+        <figure class="venture-item"><img src="assets/images/17-1024x747.jpeg" alt="Oxikart warehouse" /></figure>
+        <figure class="venture-item"><img src="assets/images/18-1024x746.jpeg" alt="Oxikart warehouse" /></figure>
 
-        <figure class="venture-item venture-row-break"><img src="assets/8-1024x768.jpeg" alt="Maharshi plant" /></figure>
-        <figure class="venture-item"><img src="assets/9-1024x682.jpeg" alt="Maharshi unit interior" /></figure>
-        <figure class="venture-item"><img src="assets/10-1024x682.jpeg" alt="Maharshi machinery section" /></figure>
-        <figure class="venture-item"><img src="assets/11-1024x682.jpeg" alt="Maharshi workspace" /></figure>
-        <figure class="venture-item"><img src="assets/12-1024x682.jpeg" alt="Maharshi branch building" /></figure>
-        <figure class="venture-item"><img src="assets/13-1024x768.jpeg" alt="Maharshi branch building" /></figure>
-        <figure class="venture-item"><img src="assets/14-1024x768.jpeg" alt="Maharshi branch building" /></figure>
-        <figure class="venture-item"><img src="assets/15-1024x461.jpeg" alt="Maharshi branch building" /></figure>
+        <figure class="venture-item venture-row-break"><img src="assets/images/8-1024x768.jpeg" alt="Maharshi plant" /></figure>
+        <figure class="venture-item"><img src="assets/images/9-1024x682.jpeg" alt="Maharshi unit interior" /></figure>
+        <figure class="venture-item"><img src="assets/images/10-1024x682.jpeg" alt="Maharshi machinery section" /></figure>
+        <figure class="venture-item"><img src="assets/images/11-1024x682.jpeg" alt="Maharshi workspace" /></figure>
+        <figure class="venture-item"><img src="assets/images/12-1024x682.jpeg" alt="Maharshi branch building" /></figure>
+        <figure class="venture-item"><img src="assets/images/13-1024x768.jpeg" alt="Maharshi branch building" /></figure>
+        <figure class="venture-item"><img src="assets/images/14-1024x768.jpeg" alt="Maharshi branch building" /></figure>
+        <figure class="venture-item"><img src="assets/images/15-1024x461.jpeg" alt="Maharshi branch building" /></figure>
 
       </div>
     </div>
@@ -578,7 +652,7 @@
       <div class="footer-pattern" aria-hidden="true"></div>
       <div class="footer-container">
         <div class="footer-col footer-about">
-          <img src="assets/logo1 (1).png" alt="Maharshi Group" class="footer-logo" />
+          <img src="assets/images/logo1 (1).png" alt="Maharshi Group" class="footer-logo" />
           <p class="footer-about-text">
             Maharshi Group, established in 1987, is a diversified enterprise in Ayurvedic healthcare, research, trade,
             manufacturing, and e-commerce-committed to quality, innovation, and enhancing lives with trusted products.
@@ -636,7 +710,7 @@
   <button class="scroll-top" aria-label="Scroll to top">
     <i class="fa-solid fa-arrow-up"></i>
   </button>
-  <script src="script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

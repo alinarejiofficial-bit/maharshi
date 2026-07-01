@@ -1,24 +1,3 @@
-// Smooth parallax scroll animation using lerp
-document.addEventListener('DOMContentLoaded', function () {
-  const hero = document.querySelector('.hero');
-  if (!hero) return;
-
-  let targetScroll = 0;
-  let currentPos = 0;
-  const ease = 0.08;
-
-  window.addEventListener('scroll', () => {
-    targetScroll = window.scrollY;
-  });
-
-  const animate = () => {
-    currentPos += (targetScroll - currentPos) * ease;
-    hero.style.backgroundPosition = `center ${-currentPos * 0.3}px`;
-    requestAnimationFrame(animate);
-  };
-  animate();
-});
-
 // Count-up animation for years badge
 document.addEventListener('DOMContentLoaded', function () {
   const badgeNum = document.querySelector('.badge-num');
