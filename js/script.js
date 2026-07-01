@@ -1,3 +1,43 @@
+// Hero mobile navigation
+document.addEventListener('DOMContentLoaded', function () {
+  const navWrap = document.querySelector('.navbar-container');
+  const navToggle = document.querySelector('.nav-toggle');
+  const navLinks = document.querySelector('.nav-links');
+
+  if (!navWrap || !navToggle || !navLinks) return;
+
+  function closeNav() {
+    navWrap.classList.remove('is-open');
+    navToggle.setAttribute('aria-expanded', 'false');
+    document.body.style.overflow = '';
+  }
+
+  navToggle.addEventListener('click', function () {
+    const isOpen = navWrap.classList.toggle('is-open');
+    navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    document.body.style.overflow = isOpen ? 'hidden' : '';
+  });
+
+  navLinks.querySelectorAll('a').forEach(function (link) {
+    link.addEventListener('click', closeNav);
+  });
+
+  document.addEventListener('click', function (e) {
+    if (!navWrap.classList.contains('is-open')) return;
+    if (!navWrap.contains(e.target) && !navLinks.contains(e.target)) {
+      closeNav();
+    }
+  });
+
+  window.addEventListener('resize', function () {
+    if (window.innerWidth > 1024) closeNav();
+  });
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') closeNav();
+  });
+});
+
 // Count-up animation for years badge
 document.addEventListener('DOMContentLoaded', function () {
   const badgeNum = document.querySelector('.badge-num');
