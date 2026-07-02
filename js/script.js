@@ -48,10 +48,6 @@ document.addEventListener('DOMContentLoaded', function () {
   const scrollTopBtn = document.querySelector('.scroll-top');
   if (!scrollTopBtn) return;
 
-  window.addEventListener('scroll', () => {
-    scrollTopBtn.classList.toggle('visible', window.scrollY > 400);
-  });
-
   scrollTopBtn.addEventListener('click', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
@@ -360,7 +356,7 @@ document.addEventListener('DOMContentLoaded', function () {
   function measure() {
     const visible = getVisibleCount();
     const gap = getGap();
-    const viewportWidth = viewport.offsetWidth;
+    const viewportWidth = viewport.clientWidth;
     const cardWidth = (viewportWidth - (visible - 1) * gap) / visible;
     viewport.style.setProperty('--values-card-width', cardWidth + 'px');
     cardStep = cardWidth + gap;
@@ -382,9 +378,15 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   }
 
+  function setNavActive(direction) {
+    prevBtn.classList.toggle('is-active', direction === 'prev');
+    nextBtn.classList.toggle('is-active', direction === 'next');
+  }
+
   function goNext() {
     if (isAnimating || !cardStep) return;
 
+    setNavActive('next');
     isAnimating = true;
     index++;
     update(true);
@@ -396,6 +398,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
   function goPrev() {
     if (isAnimating || !cardStep) return;
+
+    setNavActive('prev');
 
     const visible = getVisibleCount();
     const total = cardTemplates.length;
@@ -451,6 +455,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   buildTrack();
+  setNavActive('next');
 
   requestAnimationFrame(function () {
     measure();
