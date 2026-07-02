@@ -6,39 +6,67 @@
   <title>Vitae Up Research & Remedies - Maharshi Group</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="about-page">
-  <section class="about-hero">
-    <div class="aboutpage-navbar-wrap">
-      <nav class="aboutpage-navbar">
-        <a href="index.html" class="aboutpage-logo-link" aria-label="Maharshi Home">
-          <img src="assets/images/logo1.png" alt="Maharshi Ayur Lab" class="aboutpage-logo">
-        </a>
-        <ul class="aboutpage-nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="companies.html" class="is-active">Companies</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <div class="aboutpage-nav-right">
-          <div class="aboutpage-contact">
-            <span class="aboutpage-phone-icon"><i class="fa-solid fa-phone"></i></span>
-            <div>
-              <span class="aboutpage-contact-label">Have Any Questions?</span>
-              <span class="aboutpage-contact-number">+91 996 109 6701</span>
-            </div>
-          </div>
-          <a href="contact.html" class="aboutpage-cta">Get in Touch <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-        </div>
-      </nav>
-    </div>
-    <div class="about-hero-content"><h1>Vitae Up Research &amp; Remedies</h1></div>
-  </section>
+  <header class="inner-hero">
+    <div class="inner-hero-bg" aria-hidden="true"></div>
+    <div class="inner-hero-overlay" aria-hidden="true"></div>
 
-  <section class="company-detail-section">
+    <div class="inner-hero-inner">
+      <div class="navbar-container">
+        <nav class="navbar">
+          <a href="index.html" class="logo-container" aria-label="Maharshi Home">
+            <img src="assets/images/logo1.png" alt="Maharshi Ayur Lab" class="logo-img">
+          </a>
+
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="companies.html" class="active">Companies</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+
+          <div class="nav-right">
+            <div class="contact-info">
+              <div class="phone-icon">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div class="contact-text">
+                <span class="label">Have Any Questions?</span>
+                <span class="number">+91 996 109 6701</span>
+              </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <a href="contact.html" class="btn btn-primary">
+              Get in Touch
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+              </svg>
+            </a>
+          </div>
+        </nav>
+      </div>
+
+      <div class="inner-hero-content">
+        <div class="inner-hero-label">
+          <svg class="inner-hero-label-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M12 2C12 2 6 8 6 14C6 17.3 8.7 20 12 20C15.3 20 18 17.3 18 14C18 8 12 2 12 2Z" stroke="#7CC242" stroke-width="1.5" stroke-linejoin="round"/>
+            <path d="M12 20V12" stroke="#7CC242" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+          <span>MAHARSHI GROUP</span>
+        </div>
+        <h1 class="inner-hero-title">Vitae Up Research &amp; Remedies</h1>
+        <span class="inner-hero-line" aria-hidden="true"></span>
+      </div>
+    </div>
+  </header>
+
+<section class="company-detail-section">
     <div class="company-detail-container">
       <div class="company-detail-content">
         <span class="company-detail-tag">Health &amp; Wellness Manufacturing</span>
@@ -95,13 +123,19 @@
     </div>
   </section>
 
-  <!-- Footer Section -->
   <footer class="site-footer">
     <div class="footer-top">
-      <div class="footer-pattern" aria-hidden="true"></div>
+      <div class="footer-leaf" aria-hidden="true">
+        <svg viewBox="0 0 120 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M60 12C60 12 18 58 24 112C28 132 42 138 60 140" stroke="#8aaa57" stroke-width="1.2" stroke-opacity="0.22"/>
+          <path d="M60 12C60 12 98 52 92 104C88 124 74 132 60 136" stroke="#8aaa57" stroke-width="1.2" stroke-opacity="0.16"/>
+        </svg>
+      </div>
       <div class="footer-container">
         <div class="footer-col footer-about">
-          <img src="assets/images/logo1 (1).png" alt="Maharshi Group" class="footer-logo" />
+          <div class="footer-logo-wrap">
+            <img src="assets/images/logo1 (1).png" alt="Maharshi Group" class="footer-logo" />
+          </div>
           <p class="footer-about-text">
             Maharshi Group, established in 1987, is a diversified enterprise in Ayurvedic healthcare, research, trade,
             manufacturing, and e-commerce-committed to quality, innovation, and enhancing lives with trusted products.
@@ -110,55 +144,80 @@
 
         <div class="footer-col">
           <h3 class="footer-title">Quick Links</h3>
-          <ul class="footer-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#companies">Companies</a></li>
-            <li><a href="#">Contact Us</a></li>
+          <span class="footer-title-line" aria-hidden="true"></span>
+          <ul class="footer-links footer-links-nav">
+            <li><a href="index.html">Home <i class="fa-solid fa-chevron-right" aria-hidden="true"></i></a></li>
+            <li><a href="about.html">About Us <i class="fa-solid fa-chevron-right" aria-hidden="true"></i></a></li>
+            <li><a href="companies.html">Companies <i class="fa-solid fa-chevron-right" aria-hidden="true"></i></a></li>
+            <li><a href="contact.html">Contact Us <i class="fa-solid fa-chevron-right" aria-hidden="true"></i></a></li>
           </ul>
         </div>
 
         <div class="footer-col">
           <h3 class="footer-title">Our Companies</h3>
-          <ul class="footer-links">
-            <li><a href="#">Maharshi Ayur Lab Kerala Pvt Ltd</a></li>
-            <li><a href="#">Vitae Up Research &amp; Remedies</a></li>
-            <li><a href="#">Oxion Angel Luxe</a></li>
-            <li><a href="#">Oxyma Health Care</a></li>
-            <li><a href="#">D2I Doors And Windows</a></li>
-            <li><a href="#">Oxikart</a></li>
-            <li><a href="#">Maxwell Link</a></li>
-            <li><a href="#">Max And Mark</a></li>
-            <li><a href="#">Oxion Fruit Extraction</a></li>
-            <li><a href="#">We Six</a></li>
+          <span class="footer-title-line" aria-hidden="true"></span>
+          <ul class="footer-links footer-companies-list">
+            <li><a href="maharshi-ayur-lab-kerala.html">Maharshi Ayur Lab Kerala Pvt Ltd</a></li>
+            <li><a href="vitae-up-research-remedies.html">Vitae Up Research &amp; Remedies</a></li>
+            <li><a href="oxion-angel-luxe.html">Oxion Angel Luxe</a></li>
+            <li><a href="oxyma-health-care.html">Oxyma Health Care</a></li>
+            <li><a href="d21-doors-and-windows.html">D2I Doors And Windows</a></li>
+            <li><a href="oxikart.html">Oxikart</a></li>
+            <li><a href="maxwell-link.html">Maxwell Link</a></li>
+            <li><a href="max-and-mark.html">Max And Mark</a></li>
+            <li><a href="oxion-fruit-extraction.html">Oxion Fruit Extraction</a></li>
+            <li><a href="we-six.html">We Six</a></li>
           </ul>
         </div>
 
-        <div class="footer-col">
-          <h3 class="footer-title">Contact Us</h3>
-          <ul class="footer-contact-list">
-            <li><i class="fa-regular fa-envelope"></i><span>maharshiayurlabkerala@gmail.com</span></li>
-            <li><i class="fa-solid fa-phone"></i><span>9961096701</span></li>
-            <li><i class="fa-solid fa-phone"></i><span>04852001228</span></li>
-          </ul>
+        <div class="footer-col footer-contact-col">
+          <div class="footer-card">
+            <h3 class="footer-title">Contact Us</h3>
+            <span class="footer-title-line" aria-hidden="true"></span>
+            <ul class="footer-contact-list">
+              <li>
+                <span class="footer-icon"><i class="fa-regular fa-envelope"></i></span>
+                <span>maharshiayurlabkerala@gmail.com</span>
+              </li>
+              <li>
+                <span class="footer-icon"><i class="fa-solid fa-phone"></i></span>
+                <span>9961096701</span>
+              </li>
+              <li>
+                <span class="footer-icon"><i class="fa-solid fa-phone"></i></span>
+                <span>04852001228</span>
+              </li>
+            </ul>
+          </div>
 
-          <h3 class="footer-title footer-address-title">Our Address</h3>
-          <div class="footer-address">
-            <i class="fa-regular fa-building"></i>
-            <span>Maharshi Ayurlab Kerala Pvt. Ltd., Kottappady P. O., Ernakulam District, Kerala - 686692</span>
+          <div class="footer-card">
+            <h3 class="footer-title">Our Address</h3>
+            <span class="footer-title-line" aria-hidden="true"></span>
+            <div class="footer-address">
+              <span class="footer-icon"><i class="fa-solid fa-location-dot"></i></span>
+              <span>Maharshi Ayurlab Kerala Pvt. Ltd., Kottappady P. O., Ernakulam District, Kerala - 686692</span>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
     <div class="footer-bottom">
-      <p>All rights reserved © 2025 @ Maharshi Ayurlab Kerala</p>
+      <div class="footer-bottom-inner">
+        <p class="footer-copyright">All rights reserved © 2025 @ Maharshi Ayurlab Kerala</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <button class="scroll-top footer-scroll-top" aria-label="Scroll to top">
+          <i class="fa-solid fa-arrow-up"></i>
+        </button>
+      </div>
     </div>
   </footer>
 
-  <button class="scroll-top" aria-label="Scroll to top">
-    <i class="fa-solid fa-arrow-up"></i>
-  </button>
   <script src="js/script.js"></script>
 </body>
 </html>
