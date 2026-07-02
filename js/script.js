@@ -477,3 +477,81 @@ document.addEventListener('DOMContentLoaded', function () {
     }, 150);
   });
 });
+
+// Mobile navigation menu
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('.navbar').forEach(function (navbar) {
+    if (navbar.querySelector('.nav-toggle')) return;
+
+    var navLinks = navbar.querySelector('.nav-links');
+    var navRight = navbar.querySelector('.nav-right');
+    if (!navLinks) return;
+
+    var toggle = document.createElement('button');
+    toggle.type = 'button';
+    toggle.className = 'nav-toggle';
+    toggle.setAttribute('aria-label', 'Toggle navigation menu');
+    toggle.setAttribute('aria-expanded', 'false');
+    toggle.innerHTML =
+      '<span class="nav-toggle-bar"></span>' +
+      '<span class="nav-toggle-bar"></span>' +
+      '<span class="nav-toggle-bar"></span>';
+
+    navbar.insertBefore(toggle, navLinks);
+
+    if (navRight && !navLinks.querySelector('.nav-mobile-extra')) {
+      var ctaBtn = navRight.querySelector('.btn-primary');
+      var phoneNumEl = navRight.querySelector('.contact-text .number');
+      var phoneNum = phoneNumEl ? phoneNumEl.textContent.trim() : '';
+      var extra = document.createElement('li');
+      extra.className = 'nav-mobile-extra';
+
+      if (phoneNum) {
+        var phoneLink = document.createElement('a');
+        phoneLink.className = 'nav-mobile-phone';
+        phoneLink.href = 'tel:' + phoneNum.replace(/\s+/g, '');
+        phoneLink.innerHTML =
+          '<i class="fa-solid fa-phone" aria-hidden="true"></i><span>' +
+          phoneNum +
+          '</span>';
+        extra.appendChild(phoneLink);
+      }
+
+      if (ctaBtn) {
+        var ctaWrap = document.createElement('div');
+        ctaWrap.className = 'nav-mobile-cta-wrap';
+        ctaWrap.appendChild(ctaBtn.cloneNode(true));
+        extra.appendChild(ctaWrap);
+      }
+
+      if (extra.childNodes.length) {
+        navLinks.appendChild(extra);
+      }
+    }
+
+    function closeMenu() {
+      navbar.classList.remove('is-open');
+      toggle.setAttribute('aria-expanded', 'false');
+      document.body.classList.remove('nav-open');
+    }
+
+    toggle.addEventListener('click', function (event) {
+      event.stopPropagation();
+      var isOpen = navbar.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      document.body.classList.toggle('nav-open', isOpen);
+    });
+
+    navLinks.querySelectorAll('a').forEach(function (link) {
+      link.addEventListener('click', closeMenu);
+    });
+
+    document.addEventListener('click', function (event) {
+      if (!navbar.contains(event.target)) closeMenu();
+    });
+
+    window.addEventListener('resize', function () {
+      if (window.innerWidth > 1024) closeMenu();
+    });
+  });
+});
