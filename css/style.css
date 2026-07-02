@@ -901,7 +901,8 @@ a.logo-container {
 
   .hero-buttons .btn {
     justify-content: center;
-    width: 100%;
+    width: 200px;
+    margin-left: 73px;
   }
 
   /* Hero mobile layout (matches mobile mockup) */
@@ -1009,9 +1010,9 @@ a.logo-container {
     margin-right: auto;
   }
 
-  .hero-desc {
-    background: #5b7a3a;
-    color: rgba(255, 255, 255, 0.95);
+  .hero-desc{
+    display: none;
+    color: #5b7a3a;
     font-size: 16px;
     line-height: 1.65;
     padding: 14px 18px;
