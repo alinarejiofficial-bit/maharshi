@@ -34,9 +34,6 @@
         </ul>
 
         <div class="nav-right">
-          <button type="button" class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
-            <i class="fa-solid fa-bars" aria-hidden="true"></i>
-          </button>
           <div class="contact-info">
             <div class="phone-icon">
                 <i class="fa-solid fa-phone"></i>
@@ -49,7 +46,7 @@
 
           <div class="divider"></div>
 
-            <a href="contact.html" class="btn btn-primary" aria-label="Get in Touch">
+            <a href="contact.html" class="btn btn-primary">
             Get in Touch
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
               stroke="currentColor">
@@ -156,36 +153,68 @@
 
   <!-- About Section -->
   <section class="about-section" id="about">
-    <div class="about-container">
+    <div class="about-decor about-decor-leaf-tl" aria-hidden="true">
+      <svg viewBox="0 0 120 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M60 10C60 10 20 50 25 95C30 120 45 130 60 135" stroke="#8aaa57" stroke-width="1.2" stroke-opacity="0.35"/>
+        <path d="M60 10C60 10 95 45 90 88C86 115 72 125 60 130" stroke="#8aaa57" stroke-width="1.2" stroke-opacity="0.28"/>
+        <ellipse cx="58" cy="72" rx="22" ry="38" transform="rotate(-8 58 72)" stroke="#8aaa57" stroke-width="1" stroke-opacity="0.22"/>
+      </svg>
+    </div>
+    <div class="about-decor about-decor-leaf-br" aria-hidden="true">
+      <svg viewBox="0 0 100 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M50 8C50 8 15 42 18 78C20 98 32 108 50 112" stroke="#8aaa57" stroke-width="1.1" stroke-opacity="0.3"/>
+        <path d="M50 8C50 8 82 38 80 72C78 92 66 102 50 106" stroke="#8aaa57" stroke-width="1.1" stroke-opacity="0.24"/>
+      </svg>
+    </div>
 
-      <!-- Left: Images -->
-      <div class="about-images">
-        <div class="about-img-top">
-          <img src="assets/images/8-350x395.jpeg" alt="Maharshi Group Building" />
+    <div class="about-container">
+      <div class="about-visual">
+        <div class="about-visual-bg" aria-hidden="true">
+          <span class="about-green-panel">
+            <span class="about-panel-leaf">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2C12 2 6 8 6 14C6 17.3 8.7 20 12 20C15.3 20 18 17.3 18 14C18 8 12 2 12 2Z" stroke="#ffffff" stroke-width="1.4" stroke-linejoin="round"/>
+                <path d="M12 20V12" stroke="#ffffff" stroke-width="1.4" stroke-linecap="round"/>
+              </svg>
+            </span>
+            <span class="about-dot-grid"></span>
+          </span>
+          <span class="about-curve-bl"></span>
         </div>
-        <div class="about-img-bottom">
-          <img src="assets/images/WhatsApp-Image-2025-10-23-at-2.42.13-PM-379x428.jpeg" alt="Maharshi Group Campus" />
-        </div>
+
+        <div class="about-images">
+          <div class="about-img-top">
+            <img src="assets/images/about.png" alt="Maharshi Group Building" />
+          </div>
+          <div class="about-img-bottom">
+            <img src="assets/images/maharshi-hero.png" alt="Maharshi Group Campus" />
+          </div>
           <div class="about-badge">
-          <div class="badge-top">
             <div class="badge-icon">
               <i class="fa-solid fa-briefcase"></i>
             </div>
             <span class="badge-num" data-target="28">1+</span>
+            <span class="badge-divider"></span>
+            <span class="badge-label">Years Of Experience</span>
           </div>
-          <div class="badge-divider"></div>
-          <span class="badge-label">Years Of Experience</span>
         </div>
       </div>
 
-      <!-- Right: Content -->
       <div class="about-content">
-        <div class="about-tag">ABOUT COMPANY</div>
+        <div class="about-tag">
+          <svg class="about-tag-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M12 2C12 2 6 8 6 14C6 17.3 8.7 20 12 20C15.3 20 18 17.3 18 14C18 8 12 2 12 2Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+            <path d="M12 20V12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+          ABOUT COMPANY
+        </div>
+
         <h2 class="about-title">
           Enriching lives through<br>
-          Wellness and Innovation —<br>
-          <em class="about-highlight">Be with us</em>
+          Wellness and Innovation —
         </h2>
+        <p class="about-highlight">Be with us</p>
+
         <p class="about-desc">
           Maharshi Group is a diversified enterprise driving progress across healthcare, manufacturing,
           e-commerce, and global trade. Blending traditional values with modern innovation, we deliver
@@ -195,32 +224,39 @@
         <div class="about-accordion">
           <div class="accordion-item" onclick="toggleAccordion(this)">
             <div class="accordion-header">
-              <span>Ayurvedic Trust &amp; Wellness</span>
+              <span class="accordion-item-icon" aria-hidden="true">
+                <i class="fa-solid fa-spa"></i>
+              </span>
+              <span class="accordion-item-label">Ayurvedic Trust &amp; Wellness</span>
               <span class="accordion-icon">+</span>
             </div>
             <div class="accordion-body">
-              <p>We combine the ancient wisdom of Ayurveda with modern science to deliver natural, effective wellness solutions trusted across generations.</p>
+              <p>Delivering authentic Ayurvedic solutions that nurture holistic health and lasting wellbeing.</p>
             </div>
           </div>
           <div class="accordion-item" onclick="toggleAccordion(this)">
             <div class="accordion-header">
-              <span>Global Innovation &amp; Sustainability</span>
+              <span class="accordion-item-icon" aria-hidden="true">
+                <i class="fa-solid fa-earth-americas"></i>
+              </span>
+              <span class="accordion-item-label">Global Innovation &amp; Sustainability</span>
               <span class="accordion-icon">+</span>
             </div>
             <div class="accordion-body">
-              <p>Our commitment to sustainable innovation drives us to develop eco-friendly solutions that benefit communities and the planet.</p>
+              <p>Building a future of excellence with world-class, sustainable products that inspire growth.</p>
             </div>
           </div>
         </div>
 
-        <a href="companies.html" class="btn btn-primary about-btn">
+        <a href="companies.html" class="about-btn">
           View Our Companies
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="18" height="18">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
-          </svg>
+          <span class="about-btn-arrow" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+            </svg>
+          </span>
         </a>
       </div>
-
     </div>
   </section>
 
