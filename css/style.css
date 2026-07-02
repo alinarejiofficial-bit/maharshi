@@ -4399,14 +4399,17 @@ html {
   margin: 0;
 }
 
-.footer-links li,
 .footer-contact-list li,
 .footer-address {
   border-bottom: 1px solid rgba(163, 177, 138, 0.22);
 }
 
-.footer-links li:last-child,
 .footer-contact-list li:last-child {
+  border-bottom: none;
+}
+
+.footer-links-nav li,
+.footer-companies-list li {
   border-bottom: none;
 }
 
@@ -4427,7 +4430,7 @@ html {
   align-items: center;
   justify-content: space-between;
   gap: 12px;
-  padding: 13px 0;
+  padding: 8px 0;
   transition: color 0.25s ease;
 }
 
@@ -4448,7 +4451,7 @@ html {
 
 .footer-companies-list a {
   display: block;
-  padding: 11px 0;
+  padding: 7px 0;
   transition: color 0.25s ease;
 }
 
