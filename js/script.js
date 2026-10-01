@@ -100,7 +100,13 @@ document.addEventListener('DOMContentLoaded', function () {
     return first.getBoundingClientRect().width + gap;
   }
 
-  function scrollOneItem(state) {
+  function setOffset(state, offset, transition) {
+    state.offset = offset;
+    state.track.style.transition = transition || 'none';
+    state.track.style.transform = `translate3d(-${offset}px, 0, 0)`;
+  }
+
+  function scrollOneItem(state, direction = 1, duration = 1.5) {
     if (state.animating) {
       return false;
     }
@@ -110,23 +116,21 @@ document.addEventListener('DOMContentLoaded', function () {
       return false;
     }
 
+    const loopWidth = stepWidth * state.baseCount;
+    if (direction < 0 && state.offset < stepWidth) {
+      setOffset(state, state.offset + loopWidth);
+      void state.track.offsetWidth;
+    }
+
     state.animating = true;
-    state.offset += stepWidth;
-    state.track.style.transition = 'transform 1.5s ease';
-    state.track.style.transform = `translate3d(-${state.offset}px, 0, 0)`;
+    setOffset(state, state.offset + stepWidth * direction, `transform ${duration}s ease`);
 
     state.track.addEventListener('transitionend', function handler() {
-      state.track.removeEventListener('transitionend', handler);
-
-      const loopWidth = stepWidth * state.baseCount;
       if (state.offset >= loopWidth) {
-        state.offset -= loopWidth;
-        state.track.style.transition = 'none';
-        state.track.style.transform = `translate3d(-${state.offset}px, 0, 0)`;
+        setOffset(state, state.offset - loopWidth);
       }
 
       requestAnimationFrame(function () {
-        state.track.style.transition = 'transform 1.5s ease';
         state.animating = false;
       });
     }, { once: true });
@@ -145,9 +149,9 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   }
 
-  function startVenturesAutoScroll() {
+  function startVenturesAutoScroll(stepNow = true) {
     stopVenturesAutoScroll();
-    runStep();
+    if (stepNow) runStep();
     venturesTimer = setInterval(runStep, isMobile ? 3000 : 1700);
   }
 
@@ -159,9 +163,70 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   venturesGrid.addEventListener('mouseenter', stopVenturesAutoScroll);
-  venturesGrid.addEventListener('mouseleave', startVenturesAutoScroll);
-  venturesGrid.addEventListener('touchstart', stopVenturesAutoScroll, { passive: true });
-  venturesGrid.addEventListener('touchend', startVenturesAutoScroll, { passive: true });
+  venturesGrid.addEventListener('mouseleave', () => startVenturesAutoScroll());
+
+  const swipeState = rowStates[0];
+  let touchStartX = 0;
+  let touchStartY = 0;
+  let dragX = 0;
+  let isDragging = false;
+  let didSwipe = false;
+
+  venturesGrid.addEventListener('touchstart', function (event) {
+    stopVenturesAutoScroll();
+    if (!isMobile || swipeState.animating) return;
+
+    const touch = event.touches[0];
+    touchStartX = touch.clientX;
+    touchStartY = touch.clientY;
+    dragX = 0;
+    isDragging = false;
+    didSwipe = false;
+
+    const stepWidth = getStepWidth(swipeState);
+    if (swipeState.offset < stepWidth) {
+      setOffset(swipeState, swipeState.offset + stepWidth * swipeState.baseCount);
+    }
+  }, { passive: true });
+
+  venturesGrid.addEventListener('touchmove', function (event) {
+    if (!isMobile || swipeState.animating) return;
+
+    const touch = event.touches[0];
+    const dx = touch.clientX - touchStartX;
+    const dy = touch.clientY - touchStartY;
+
+    if (!isDragging) {
+      if (Math.abs(dx) < 8 || Math.abs(dx) < Math.abs(dy)) return;
+      isDragging = true;
+    }
+
+    dragX = dx;
+    swipeState.track.style.transition = 'none';
+    swipeState.track.style.transform = `translate3d(${-swipeState.offset + dragX}px, 0, 0)`;
+  }, { passive: true });
+
+  venturesGrid.addEventListener('touchend', function () {
+    if (isMobile && isDragging) {
+      didSwipe = true;
+      const threshold = Math.min(60, getStepWidth(swipeState) * 0.2);
+      if (Math.abs(dragX) > threshold) {
+        scrollOneItem(swipeState, dragX < 0 ? 1 : -1, 0.45);
+      } else {
+        setOffset(swipeState, swipeState.offset, 'transform 0.3s ease');
+      }
+      isDragging = false;
+    }
+    startVenturesAutoScroll(false);
+  }, { passive: true });
+
+  venturesGrid.addEventListener('click', function (event) {
+    if (didSwipe) {
+      event.stopPropagation();
+      event.preventDefault();
+      didSwipe = false;
+    }
+  }, true);
 
   startVenturesAutoScroll();
 });

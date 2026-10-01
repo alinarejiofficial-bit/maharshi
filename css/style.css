@@ -4833,6 +4833,7 @@ a.logo-container {
 
   .ventures-row {
     border-radius: 16px;
+    touch-action: pan-y;
   }
 
   .ventures-grid.ventures-grid-scroll .venture-item {
