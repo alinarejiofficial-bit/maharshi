@@ -1784,6 +1784,7 @@ a.logo-container {
   }
 
   .about-legacy-collage {
+    width: 100%;
     min-height: 480px;
     max-width: 560px;
     margin: 0 auto;
@@ -1799,8 +1800,15 @@ a.logo-container {
     padding: 70px 1.5rem 72px;
   }
 
+  .about-legacy-container {
+    gap: 32px;
+  }
+
   .about-legacy-collage {
-    min-height: 380px;
+    min-height: 0;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
   }
 
   .about-legacy-title {
@@ -1811,24 +1819,21 @@ a.logo-container {
     font-size: 14px;
   }
 
+  .legacy-img,
   .legacy-img-one,
-  .legacy-img-two {
-    width: 44%;
-    height: 44%;
-  }
-
-  .legacy-img-one {
-    left: 0;
-  }
-
-  .legacy-img-two {
-    right: 0;
+  .legacy-img-two,
+  .legacy-img-three {
+    position: static;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    border-width: 3px;
+    border-radius: 18px;
   }
 
   .legacy-img-three {
-    left: 12%;
-    width: 76%;
-    height: 46%;
+    grid-column: 1 / -1;
+    aspect-ratio: 16 / 9;
   }
 }
 
