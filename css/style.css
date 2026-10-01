@@ -2749,6 +2749,49 @@ a.logo-container {
 @media (max-width: 760px) {
   .companies-listing-grid {
     grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .companies-listing-card {
+    position: relative;
+    min-height: 0;
+    flex-direction: row;
+    align-items: center;
+    gap: 14px;
+    padding: 14px 14px 14px 16px;
+    border-radius: 16px;
+  }
+
+  .companies-listing-icon {
+    width: 42px;
+    height: 42px;
+    flex-shrink: 0;
+    margin-bottom: 0;
+    font-size: 15px;
+  }
+
+  .companies-listing-card h3 {
+    flex: 1;
+    min-width: 0;
+    font-size: 1.05rem;
+    line-height: 1.3;
+  }
+
+  .companies-listing-link::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+  }
+
+  .companies-listing-plus {
+    position: relative;
+    z-index: 1;
+    margin-top: 0;
+    flex-shrink: 0;
+    width: 32px;
+    height: 32px;
+    font-size: 18px;
   }
 }
 
@@ -5863,7 +5906,7 @@ a.logo-container {
   }
 
   .companies-listing-card {
-    padding: 24px 20px;
+    padding: 12px 12px 12px 14px;
   }
 
   .company-detail-side-card {
