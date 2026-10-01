@@ -977,7 +977,7 @@ a.logo-container {
     align-items: center;
     text-align: center;
     width: 100%;
-    padding: 1.25rem 0 0;
+    padding: calc(1.25rem + 30px) 0 0;
   }
 
   .hero-label {
@@ -5705,6 +5705,9 @@ a.logo-container {
 
 .hero-leaf-decor,
 .about-decor,
+.about-dot-grid,
+.about-curve-bl,
+.companies-wave,
 .values-bg-leaf-bl,
 .values-leaf-decor,
 .values-dot-grid,
