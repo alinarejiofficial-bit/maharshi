@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function () {
 // Ventures section auto-scroll: both rows right-to-left
 document.addEventListener('DOMContentLoaded', function () {
   const venturesGrid = document.querySelector('.ventures-grid');
-  if (!venturesGrid || window.innerWidth <= 900) return;
+  if (!venturesGrid) return;
 
   const items = Array.from(venturesGrid.querySelectorAll('.venture-item'));
   if (items.length < 4) return;
@@ -157,6 +157,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
   venturesGrid.addEventListener('mouseenter', stopVenturesAutoScroll);
   venturesGrid.addEventListener('mouseleave', startVenturesAutoScroll);
+  venturesGrid.addEventListener('touchstart', stopVenturesAutoScroll, { passive: true });
+  venturesGrid.addEventListener('touchend', startVenturesAutoScroll, { passive: true });
 
   startVenturesAutoScroll();
 });

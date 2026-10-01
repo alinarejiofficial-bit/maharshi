@@ -4769,6 +4769,33 @@ a.logo-container {
   flex: 0 0 calc((100% - 48px) / 5);
 }
 
+@media (max-width: 1024px) {
+  .ventures-grid.ventures-grid-scroll .venture-item {
+    flex-basis: calc((100% - 24px) / 3);
+  }
+}
+
+@media (max-width: 768px) {
+  .ventures-grid.ventures-grid-scroll,
+  .ventures-track {
+    gap: 10px;
+  }
+
+  .ventures-row {
+    border-radius: 16px;
+  }
+
+  .ventures-grid.ventures-grid-scroll .venture-item {
+    flex-basis: calc((100% - 10px) / 2);
+  }
+}
+
+@media (max-width: 420px) {
+  .ventures-grid.ventures-grid-scroll .venture-item {
+    flex-basis: 78%;
+  }
+}
+
 /* Ventures section scroll reveal */
 .ventures-header,
 .ventures-grid .venture-item {
