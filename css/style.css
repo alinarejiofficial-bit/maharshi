@@ -5832,6 +5832,27 @@ a.logo-container {
   display: none !important;
 }
 
+.btn svg,
+.values-btn-arrow svg,
+.company-card-btn svg,
+.project-card-btn svg,
+.about-commitment-arrow svg,
+.value-card-arrow i,
+.footer-links-nav a i {
+  display: block;
+  flex-shrink: 0;
+  transition: transform 0.25s ease;
+}
+
+.btn:hover svg,
+.values-btn:hover .values-btn-arrow svg,
+.company-card-btn:hover svg,
+.project-card-btn:hover svg,
+.about-commitment-pillar:hover .about-commitment-arrow svg,
+.value-card:hover .value-card-arrow i {
+  transform: translateX(3px);
+}
+
 @media (max-width: 768px) {
   .about-img-top,
   .about-visual-bg {
