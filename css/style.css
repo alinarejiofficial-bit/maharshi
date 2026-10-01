@@ -1022,12 +1022,17 @@ a.logo-container {
     width: 100%;
     top: 0;
     object-position: center 28%;
-    -webkit-mask-image: none;
-    mask-image: none;
   }
 
   .hero-bg-gradient {
-    display: none;
+    background: linear-gradient(
+      180deg,
+      rgba(253, 252, 248, 0.92) 0%,
+      rgba(253, 252, 248, 0.78) 28%,
+      rgba(253, 252, 248, 0.45) 52%,
+      rgba(253, 252, 248, 0.15) 72%,
+      transparent 88%
+    );
   }
 
   .hero-stats {
