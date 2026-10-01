@@ -265,6 +265,11 @@ document.addEventListener('DOMContentLoaded', function () {
     const section = document.querySelector(selector);
     if (!section) return;
 
+    if (window.matchMedia('(max-width: 768px)').matches) {
+      section.classList.add(visibleClass);
+      return;
+    }
+
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
