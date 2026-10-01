@@ -977,7 +977,7 @@ a.logo-container {
     align-items: center;
     text-align: center;
     width: 100%;
-    padding: calc(1.25rem + 60px) 0 0;
+    padding: calc(1.25rem + 90px) 0 0;
   }
 
   .hero-label {
@@ -1022,17 +1022,12 @@ a.logo-container {
     width: 100%;
     top: 0;
     object-position: center 28%;
+    -webkit-mask-image: none;
+    mask-image: none;
   }
 
   .hero-bg-gradient {
-    background: linear-gradient(
-      180deg,
-      rgba(253, 252, 248, 0.92) 0%,
-      rgba(253, 252, 248, 0.78) 28%,
-      rgba(253, 252, 248, 0.45) 52%,
-      rgba(253, 252, 248, 0.15) 72%,
-      transparent 88%
-    );
+    display: none;
   }
 
   .hero-stats {
@@ -5190,6 +5185,31 @@ a.logo-container {
   line-height: 1;
 }
 
+@media (max-width: 1200px) {
+  .footer-top {
+    padding: 64px 2.5rem 56px;
+  }
+
+  .footer-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 40px 48px;
+  }
+
+  .footer-about {
+    padding-right: 0;
+    border-right: none;
+  }
+
+  .footer-contact-list li span:last-child,
+  .footer-address span:last-child {
+    overflow-wrap: anywhere;
+  }
+
+  .footer-bottom {
+    padding: 24px 2.5rem;
+  }
+}
+
 @media (max-width: 900px) {
   .about-section {
     padding: 80px 1.5rem 90px;
@@ -5554,21 +5574,91 @@ a.logo-container {
   }
 
   .footer-top {
-    padding: 56px 1.5rem 48px;
+    padding: 48px 1.25rem 40px;
   }
 
   .footer-container {
-    grid-template-columns: 1fr;
-    gap: 28px;
+    grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+    gap: 32px 24px;
+  }
+
+  .footer-about,
+  .footer-contact-col {
+    grid-column: 1 / -1;
   }
 
   .footer-about {
-    padding-right: 0;
+    padding: 0 0 28px;
     border-right: none;
+    border-bottom: 1px solid rgba(91, 122, 58, 0.14);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-logo-wrap {
+    margin-bottom: 16px;
+  }
+
+  .footer-about-text {
+    max-width: 520px;
+  }
+
+  .footer-title-line {
+    margin-bottom: 12px;
+  }
+
+  .footer-links-nav a,
+  .footer-companies-list a {
+    padding: 6px 0;
+  }
+
+  .footer-links-nav a {
+    justify-content: flex-start;
+  }
+
+  .footer-contact-col {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+  }
+
+  .footer-card {
+    padding: 18px 18px 14px;
+    border-radius: 16px;
+  }
+
+  .footer-contact-list li span:last-child,
+  .footer-address span:last-child {
+    overflow-wrap: anywhere;
+  }
+
+  .footer-contact-list li {
+    align-items: center;
+  }
+
+  .footer-card .footer-title {
+    text-align: center;
+  }
+
+  .footer-card .footer-title-line {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .footer-address {
+    border-bottom: none;
+    padding-bottom: 4px;
   }
 
   .footer-bottom {
-    padding: 24px 1.5rem 28px;
+    padding: 22px 1.25rem 24px;
+  }
+
+  .footer-copyright,
+  .footer-bottom p {
+    font-size: 13px;
   }
 
   .footer-bottom-inner {
@@ -5588,7 +5678,7 @@ a.logo-container {
   }
 
   .footer-title {
-    font-size: 1.35rem;
+    font-size: 17px;
   }
 
   .footer-about-text,
@@ -5601,6 +5691,18 @@ a.logo-container {
 
   .footer-logo {
     width: 72px;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-contact-col {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 380px) {
+  .footer-container {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -5717,4 +5819,38 @@ a.logo-container {
 .projects-leaf-bl,
 .footer-leaf {
   display: none !important;
+}
+
+@media (max-width: 768px) {
+  .about-img-top,
+  .about-visual-bg {
+    display: none;
+  }
+
+  .about-images {
+    min-height: 0;
+    height: auto;
+    aspect-ratio: auto;
+    padding-bottom: 36px;
+  }
+
+  .about-img-bottom {
+    position: relative;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+    width: 100%;
+    aspect-ratio: 4 / 3.4;
+    border-radius: 28px;
+  }
+
+  .about-badge {
+    left: 16px;
+    bottom: 0;
+    width: auto;
+    min-width: 140px;
+    padding: 14px 20px 12px;
+    border-radius: 18px;
+  }
 }
