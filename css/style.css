@@ -4836,13 +4836,7 @@ a.logo-container {
   }
 
   .ventures-grid.ventures-grid-scroll .venture-item {
-    flex-basis: calc((100% - 10px) / 2);
-  }
-}
-
-@media (max-width: 420px) {
-  .ventures-grid.ventures-grid-scroll .venture-item {
-    flex-basis: 78%;
+    flex-basis: 100%;
   }
 }
 

@@ -63,8 +63,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
   const explicitBreakIndex = items.findIndex((item) => item.classList.contains('venture-row-break'));
   const splitIndex = explicitBreakIndex > 0 ? explicitBreakIndex : Math.ceil(items.length / 2);
-  const rowGroups = [items.slice(0, splitIndex), items.slice(splitIndex)].filter((group) => group.length > 0);
-  if (rowGroups.length < 2) return;
+  const isMobile = window.innerWidth <= 768;
+  const rowGroups = isMobile
+    ? [items]
+    : [items.slice(0, splitIndex), items.slice(splitIndex)].filter((group) => group.length > 0);
+  if (!isMobile && rowGroups.length < 2) return;
 
   venturesGrid.classList.add('ventures-grid-scroll');
   venturesGrid.innerHTML = '';
@@ -145,7 +148,7 @@ document.addEventListener('DOMContentLoaded', function () {
   function startVenturesAutoScroll() {
     stopVenturesAutoScroll();
     runStep();
-    venturesTimer = setInterval(runStep, 1700);
+    venturesTimer = setInterval(runStep, isMobile ? 3000 : 1700);
   }
 
   function stopVenturesAutoScroll() {
