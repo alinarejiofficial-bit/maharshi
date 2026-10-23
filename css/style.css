@@ -5149,27 +5149,13 @@ a.logo-container {
 }
 
 .footer-links-nav a {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
+  display: block;
   padding: 8px 0;
   transition: color 0.25s ease;
 }
 
-.footer-links-nav a i {
-  font-size: 11px;
-  color: rgba(91, 122, 58, 0.55);
-  transition: color 0.25s ease, transform 0.25s ease;
-}
-
 .footer-links-nav a:hover {
   color: #5b7a3a;
-}
-
-.footer-links-nav a:hover i {
-  color: #5b7a3a;
-  transform: translateX(2px);
 }
 
 .footer-companies-list a {
@@ -5737,9 +5723,6 @@ a.logo-container {
     padding: 6px 0;
   }
 
-  .footer-links-nav a {
-    justify-content: flex-start;
-  }
 
   .footer-contact-col {
     display: grid;
