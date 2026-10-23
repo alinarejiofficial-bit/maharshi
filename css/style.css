@@ -5185,15 +5185,15 @@ a.logo-container {
 .footer-contact-col {
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 24px;
 }
 
 .footer-card {
-  background: #ffffff;
-  border-radius: 18px;
-  padding: 22px 22px 18px;
-  box-shadow: 0 10px 30px rgba(26, 46, 34, 0.07);
-  border: 1px solid rgba(163, 177, 138, 0.14);
+  background: transparent;
+  border-radius: 0;
+  padding: 0;
+  box-shadow: none;
+  border: none;
 }
 
 .footer-contact-list li,
@@ -5727,12 +5727,15 @@ a.logo-container {
   .footer-contact-col {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 16px;
+    gap: 24px;
   }
 
   .footer-card {
-    padding: 18px 18px 14px;
-    border-radius: 16px;
+    padding: 0;
+    border-radius: 0;
+    background: transparent;
+    border: none;
+    box-shadow: none;
   }
 
   .footer-contact-list li span:last-child,
@@ -5742,15 +5745,6 @@ a.logo-container {
 
   .footer-contact-list li {
     align-items: center;
-  }
-
-  .footer-card .footer-title {
-    text-align: center;
-  }
-
-  .footer-card .footer-title-line {
-    margin-left: auto;
-    margin-right: auto;
   }
 
   .footer-address {
