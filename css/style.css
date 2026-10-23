@@ -5104,15 +5104,11 @@ a.logo-container {
   font-size: 18px;
   font-weight: 700;
   color: #1a2e22;
-  margin: 0 0 10px;
+  margin: 0 0 18px;
 }
 
 .footer-title-line {
-  display: block;
-  width: 34px;
-  height: 2px;
-  background: #5b7a3a;
-  margin-bottom: 18px;
+  display: none;
 }
 
 .footer-links,
@@ -5714,9 +5710,6 @@ a.logo-container {
     max-width: 520px;
   }
 
-  .footer-title-line {
-    margin-bottom: 12px;
-  }
 
   .footer-links-nav a,
   .footer-companies-list a {
