@@ -450,7 +450,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   function update(animate) {
-    track.style.transition = animate ? 'transform 0.2s ease' : 'none';
+    track.style.transition = animate ? 'transform 0.4s ease' : 'none';
     track.style.transform = 'translateX(-' + (index * cardStep) + 'px)';
   }
 
@@ -505,7 +505,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }, { once: true });
   }
 
-  const autoScrollDelay = 4000;
+  const autoScrollDelay = 2000;
   let autoScrollTimer = null;
 
   function startAutoScroll() {
