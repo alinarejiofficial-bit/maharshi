@@ -1550,18 +1550,20 @@ html {
 .contact-card-head {
   background: #8e8c90;
   color: #ffffff;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
   padding: 16px 20px 14px;
 }
 
 .contact-card-head i {
   font-size: 24px;
-  margin-bottom: 8px;
+  margin-bottom: 0;
 }
 
 .contact-card-head h3 {
   margin: 0;
-  margin-top: 15px;
   color: #FFFFFF;
   font-family: 'Google Sans', 'Helvetica Neue', Arial, sans-serif;
   font-size: 20px;
