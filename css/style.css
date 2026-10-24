@@ -598,7 +598,8 @@ a.logo-container {
 
 .hero-stat-text {
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: auto auto;
+  justify-content: start;
   grid-template-areas:
     "num label"
     "desc desc";
@@ -619,6 +620,7 @@ a.logo-container {
 
 .hero-stat-label {
   grid-area: label;
+  white-space: nowrap;
   font-family: 'Google Sans';
   font-size: 15px;
   font-weight: 700;
@@ -628,6 +630,8 @@ a.logo-container {
 
 .hero-stat-desc {
   grid-area: desc;
+  width: 0;
+  min-width: 100%;
   font-family: 'Google Sans';
   font-size: 12.5px;
   color: #888888;
