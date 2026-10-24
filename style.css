@@ -7,7 +7,7 @@
 
 body,
 html {
-  font-family: 'Google Sans', sans-serif;
+  font-family: 'Google Sans';
   height: 100%;
   width: 100%;
 }
@@ -129,7 +129,7 @@ html {
 .nav-links a {
   text-decoration: none;
   color: #111111;
-  font-family: 'Google Sans', sans-serif;
+  font-family: 'Google Sans';
   font-weight: 500;
   font-size: 17px;
   transition: color 0.25s ease;
@@ -300,7 +300,7 @@ html {
   gap: 0.5rem;
   margin-bottom: 1rem;
   color: var(--primary-green);
-  font-family: 'Google Sans', sans-serif;
+  font-family: 'Google Sans';
   font-size: 13px;
   font-weight: 600;
   letter-spacing: 2px;
@@ -314,7 +314,7 @@ html {
 }
 
 .hero-title {
-  font-family: 'Google Sans', sans-serif;
+  font-family: 'Google Sans';
   font-size: clamp(2rem, 3.2vw, 3.15rem);
   line-height: 1.15;
   font-weight: 500;
@@ -340,7 +340,7 @@ html {
 }
 
 .hero-desc {
-  font-family: 'Google Sans', sans-serif;
+  font-family: 'Google Sans';
   font-size: clamp(15px, 1.5vw, 16px);
   font-weight: 400;
   line-height: 1.6;
@@ -466,7 +466,7 @@ html {
 }
 
 .hero-stat-text strong {
-  font-family: 'Google Sans', sans-serif;
+  font-family: 'Google Sans';
   font-size: 14px;
   font-weight: 600;
   color: #2a2a2a;
@@ -478,7 +478,7 @@ html {
 }
 
 .hero-stat-text span:last-child {
-  font-family: 'Google Sans', sans-serif;
+  font-family: 'Google Sans';
   font-size: 11px;
   color: #888888;
   line-height: 1.35;
@@ -669,7 +669,7 @@ html {
 ======================== */
 .about-page {
   margin: 0;
-  font-family: 'Google Sans', sans-serif;
+  font-family: 'Google Sans';
   background: #ffffff;
 }
 
@@ -936,7 +936,7 @@ html {
 
 .about-legacy-title em {
   color: #d7262f;
-  font-family: 'Google Sans', sans-serif;
+  font-family: 'Google Sans';
   font-style: normal;
   font-weight: 700;
 }
@@ -1026,7 +1026,7 @@ html {
 .about-legacy-contact-label {
   color: #000;
   font-size: 15px;
-  font-family: 'Google Sans', sans-serif;
+  font-family: 'Google Sans';
   font-weight: 400;
 }
 
@@ -1154,12 +1154,12 @@ html {
   font-size: 42px;
   font-weight: 400;
   line-height: 1.2381;
-  font-family: 'Google Sans', sans-serif;
+  font-family: 'Google Sans';
 }
 
 .about-commitment-title em {
   color: #d93035;
-  font-family: 'Google Sans', sans-serif;
+  font-family: 'Google Sans';
   font-style: normal;
   font-weight: 700;
 }
@@ -1213,7 +1213,7 @@ html {
   font-size: 25px;
   font-weight: 500;
   line-height: 1.4;
-  font-family: 'Google Sans', sans-serif;
+  font-family: 'Google Sans';
 }
 
 .about-commitment-pillar p {
@@ -1267,7 +1267,7 @@ html {
 }
 
 .about-commitment-bottom p {
-  font-family: 'Google Sans', sans-serif;
+  font-family: 'Google Sans';
     font-size: 18px;
     font-weight: 500;
     line-height: 1.36364;
@@ -1571,7 +1571,7 @@ html {
 .contact-card-head h3 {
   margin: 0;
   color: #FFFFFF;
-  font-family: 'Google Sans', sans-serif;
+  font-family: 'Google Sans';
   font-size: 20px;
   font-weight: 400;
 }
@@ -1585,7 +1585,7 @@ html {
 
 .contact-card-body p {
   color: #000000;
-    font-family: 'Google Sans', sans-serif;
+    font-family: 'Google Sans';
     font-size: 17px;
     font-weight: 400;
 }
@@ -1647,7 +1647,7 @@ html {
 
 .contact-reach-intro h2 em {
   color: #d93035;
-  font-family: 'Google Sans', sans-serif;
+  font-family: 'Google Sans';
   font-style: normal;
   font-weight: 700;
 }
@@ -1914,7 +1914,7 @@ html {
 
 .companies-listing-intro h2 em {
   color: #c02934;
-  font-family: 'Google Sans', sans-serif;
+  font-family: 'Google Sans';
   font-style: normal;
   font-weight: 700;
 }
@@ -1922,7 +1922,7 @@ html {
 .companies-listing-intro p {
   margin: 0;
   color: #2d3335;
-  font-family: 'Google Sans', sans-serif;
+  font-family: 'Google Sans';
  font-size: 17px;
   line-height: 1.7;
 }
@@ -2125,7 +2125,7 @@ html {
 
 .company-detail-side-card h5 {
   margin: 0 0 6px;
-  font-family: 'Google Sans', sans-serif;
+  font-family: 'Google Sans';
   font-size: 23px;
   font-weight: 600;
 }
@@ -2133,7 +2133,7 @@ html {
 .company-detail-side-card p {
   margin: 0 0 12px;
   line-height: 1.55;
-  font-family: 'Google Sans', sans-serif;
+  font-family: 'Google Sans';
     font-size: 17px;
 }
 
@@ -2314,7 +2314,7 @@ html {
 }
 
 .badge-num {
-  font-family: 'Google Sans', sans-serif;
+  font-family: 'Google Sans';
   font-size: 2.5rem;
   font-weight: 700;
   color: #111;
@@ -2330,7 +2330,7 @@ html {
 
 .badge-label {
   display: block;
-  font-family: 'Google Sans', sans-serif;
+  font-family: 'Google Sans';
   font-size: 15px;
   font-weight: 700;
   color: #111;
@@ -2352,7 +2352,7 @@ html {
   border: none;
   border-radius: 50px;
   padding: 9px 22px;
-  font-family: 'Google Sans', sans-serif;
+  font-family: 'Google Sans';
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 2px;
@@ -2363,7 +2363,7 @@ html {
 }
 
 .about-title {
-  font-family: 'Google Sans', sans-serif;
+  font-family: 'Google Sans';
   font-size: 2.625rem;
   font-weight: 400;
   color: #000000;
@@ -2377,7 +2377,7 @@ html {
   display: inline-block;
   margin-top: 4px;
   color: #e31e24;
-  font-family: 'Google Sans', sans-serif;
+  font-family: 'Google Sans';
   font-style: normal;
   font-weight: 700;
   font-size: 2.625rem;
@@ -2389,7 +2389,7 @@ html {
   color: #20282D;
   line-height: 1.55;
   max-width: 100%;
-  font-family: 'Google Sans', sans-serif;
+  font-family: 'Google Sans';
   font-size: 17px;
 }
 
@@ -2410,7 +2410,7 @@ html {
   padding: 15px 0;
   user-select: none;
   color: #223035;
-  font-family: 'Google Sans', sans-serif;
+  font-family: 'Google Sans';
   font-size: 18px;
   font-weight: 500;
   line-height: 35px;
@@ -2437,7 +2437,7 @@ html {
 }
 
 .accordion-body p {
-  font-family: 'Google Sans', sans-serif;
+  font-family: 'Google Sans';
   font-size: 14px;
   color: #666;
   line-height: 1.75;
@@ -2591,7 +2591,7 @@ html {
   background: #f2f4f2;
   border-radius: 50px;
   padding: 9px 22px;
-  font-family: 'Google Sans', sans-serif;
+  font-family: 'Google Sans';
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 2px;
@@ -2601,7 +2601,7 @@ html {
 }
 
 .values-title {
-  font-family: 'Google Sans', sans-serif;
+  font-family: 'Google Sans';
   font-size: 2.625rem;
   font-weight: 400;
   color: #000000;
@@ -2614,7 +2614,7 @@ html {
   display: inline-block;
   margin-top: 4px;
   color: #e31e24;
-  font-family: 'Google Sans', sans-serif;
+  font-family: 'Google Sans';
   font-style: normal;
   font-weight: 700;
   font-size: 2.625rem;
@@ -2622,7 +2622,7 @@ html {
 }
 
 .values-desc {
-  font-family: 'Google Sans', sans-serif;
+  font-family: 'Google Sans';
   font-size: 17px;
   font-weight: 400;
   color: #20282D;
@@ -2723,7 +2723,7 @@ html {
 }
 
 .value-card-title {
-  font-family: 'Google Sans', sans-serif;
+  font-family: 'Google Sans';
   font-size: 1.35rem;
   font-weight: 600;
   color: #ffffff;
@@ -2732,7 +2732,7 @@ html {
 }
 
 .value-card-desc {
-  font-family: 'Google Sans', sans-serif;
+  font-family: 'Google Sans';
   font-size: 15px;
   font-weight: 400;
   line-height: 1.6;
@@ -2806,7 +2806,7 @@ html {
   background: #f2f4f2;
   border-radius: 50px;
   padding: 9px 22px;
-  font-family: 'Google Sans', sans-serif;
+  font-family: 'Google Sans';
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 2px;
@@ -2838,7 +2838,7 @@ html {
   background: #f2f4f2;
   border-radius: 50px;
   padding: 9px 22px;
-  font-family: 'Google Sans', sans-serif;
+  font-family: 'Google Sans';
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 2px;
@@ -2848,7 +2848,7 @@ html {
 }
 
 .companies-title {
-  font-family: 'Google Sans', sans-serif;
+  font-family: 'Google Sans';
   font-size: 2.625rem;
   font-weight: 400;
   color: #000000;
@@ -2860,7 +2860,7 @@ html {
   display: inline-block;
   margin-top: 4px;
   color: #e31e24;
-  font-family: 'Google Sans', sans-serif;
+  font-family: 'Google Sans';
   font-style: normal;
   font-weight: 700;
   font-size: 2.625rem;
@@ -2950,7 +2950,7 @@ html {
   background: #f2f4f2;
   border-radius: 50px;
   padding: 9px 22px;
-  font-family: 'Google Sans', sans-serif;
+  font-family: 'Google Sans';
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 2px;
@@ -2960,7 +2960,7 @@ html {
 }
 
 .projects-title {
-  font-family: 'Google Sans', sans-serif;
+  font-family: 'Google Sans';
   font-size: 3rem;
   font-weight: 400;
   line-height: 1.2;
@@ -2970,14 +2970,14 @@ html {
 
 .projects-highlight {
   color: #e31e24;
-  font-family: 'Google Sans', sans-serif;
+  font-family: 'Google Sans';
   font-style: normal;
   font-weight: 700;
 }
 
 .projects-desc {
   max-width: 360px;
-  font-family: 'Google Sans', sans-serif;
+  font-family: 'Google Sans';
   font-size: 15px;
   line-height: 1.55;
   color: #394657;
@@ -3012,7 +3012,7 @@ html {
 }
 
 .project-name {
-  font-family: 'Google Sans', sans-serif;
+  font-family: 'Google Sans';
   font-size: 2.15rem;
   font-weight: 600;
   color: #ffffff;
@@ -3021,7 +3021,7 @@ html {
 }
 
 .project-text {
-  font-family: 'Google Sans', sans-serif;
+  font-family: 'Google Sans';
   font-size: 18px;
   line-height: 1.45;
   color: rgba(255, 255, 255, 0.95);
@@ -3076,7 +3076,7 @@ html {
   background: #f2f4f2;
   border-radius: 50px;
   padding: 9px 22px;
-  font-family: 'Google Sans', sans-serif;
+  font-family: 'Google Sans';
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 2px;
@@ -3086,7 +3086,7 @@ html {
 }
 
 .ventures-title {
-  font-family: 'Google Sans', sans-serif;
+  font-family: 'Google Sans';
   font-size: 3rem;
   font-weight: 400;
   color: #0e1726;
@@ -3095,7 +3095,7 @@ html {
 
 .ventures-highlight {
   color: #e31e24;
-  font-family: 'Google Sans', sans-serif;
+  font-family: 'Google Sans';
   font-style: normal;
   font-weight: 700;
 }
@@ -3217,7 +3217,7 @@ html {
   top: -28px;
   left: 50%;
   transform: translateX(-50%);
-  font-family: 'Google Sans', sans-serif;
+  font-family: 'Google Sans';
   font-size: 14px;
   font-weight: 500;
   color: #ffffff;
@@ -3319,7 +3319,7 @@ html {
 }
 
 .footer-about-text {
-  font-family: 'Google Sans', sans-serif;
+  font-family: 'Google Sans';
   font-size: 17px;
   line-height: 1.7;
   color: rgba(255, 255, 255, 0.92);
@@ -3328,7 +3328,7 @@ html {
 
 .footer-title {
   color: #000000;
-  font-family: 'Google Sans', sans-serif;
+  font-family: 'Google Sans';
   font-size: 20px;
   font-weight: 700;
   margin-bottom: 9px;
@@ -3347,7 +3347,7 @@ html {
 .footer-links li,
 .footer-contact-list li,
 .footer-address {
-  font-family: 'Google Sans', sans-serif;
+  font-family: 'Google Sans';
   font-size: 16px;
   font-weight: 400;
   text-transform: capitalize;
@@ -3386,7 +3386,7 @@ html {
 }
 
 .footer-bottom p {
-  font-family: 'Google Sans', sans-serif;
+  font-family: 'Google Sans';
   font-size: 17px;
   color: rgba(255, 255, 255, 0.95);
 }
@@ -3441,7 +3441,7 @@ html {
 }
 
 .company-card-title {
-  font-family: 'Google Sans', sans-serif;
+  font-family: 'Google Sans';
   font-size: 2.25rem;
   font-weight: 700;
   color: #1a2332;
@@ -3457,7 +3457,7 @@ html {
 }
 
 .company-card-desc {
-  font-family: 'Google Sans', sans-serif;
+  font-family: 'Google Sans';
   font-size: 17px;
   font-weight: 400;
   line-height: 1.65;
@@ -3493,7 +3493,7 @@ html {
   gap: 22px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.35);
   padding: 14px 0;
-  font-family: 'Google Sans', sans-serif;
+  font-family: 'Google Sans';
   font-size: 18px;
   font-weight: 500;
   line-height: 1.35;
@@ -3576,7 +3576,7 @@ html {
   padding: 16px 32px;
   background: #ffffff;
   border-radius: 50px;
-  font-family: 'Google Sans', sans-serif;
+  font-family: 'Google Sans';
   font-size: 16px;
   font-weight: 500;
   color: #223035;
