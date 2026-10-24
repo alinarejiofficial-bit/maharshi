@@ -443,13 +443,12 @@ a.logo-container {
 }
 
 .hero-title-accent {
-  display: inline-block;
+  display: inline;
   color: #6b9e49;
   font-style: normal;
   font-weight: 500;
-  border-bottom: none;
-  padding-bottom: 0;
-  margin-top: 7px;
+  margin: 0;
+  padding: 0;
 }
 
 .hero-title-line {
