@@ -329,7 +329,7 @@ html {
 
 .hero-title-accent {
   color: var(--primary-green);
-  font-style: italic;
+  font-style: normal;
   font-weight: 500;
 }
 
@@ -931,7 +931,7 @@ html {
 .about-legacy-title em {
   color: #d7262f;
   font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'SF Pro', 'Inter', 'Helvetica Neue', Arial, sans-serif;
-  font-style: italic;
+  font-style: normal;
   font-weight: 700;
 }
 
@@ -1154,7 +1154,7 @@ html {
 .about-commitment-title em {
   color: #d93035;
   font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'SF Pro', 'Inter', 'Helvetica Neue', Arial, sans-serif;
-  font-style: italic;
+  font-style: normal;
   font-weight: 700;
 }
 
@@ -1640,7 +1640,7 @@ html {
 .contact-reach-intro h2 em {
   color: #d93035;
   font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'SF Pro', 'Inter', 'Helvetica Neue', Arial, sans-serif;
-  font-style: italic;
+  font-style: normal;
   font-weight: 700;
 }
 
@@ -1907,7 +1907,7 @@ html {
 .companies-listing-intro h2 em {
   color: #c02934;
   font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'SF Pro', 'Inter', 'Helvetica Neue', Arial, sans-serif;
-  font-style: italic;
+  font-style: normal;
   font-weight: 700;
 }
 
@@ -2370,7 +2370,7 @@ html {
   margin-top: 4px;
   color: #e31e24;
   font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'SF Pro', 'Inter', 'Helvetica Neue', Arial, sans-serif;
-  font-style: italic;
+  font-style: normal;
   font-weight: 700;
   font-size: 2.625rem;
   letter-spacing: -0.3px;
@@ -2607,7 +2607,7 @@ html {
   margin-top: 4px;
   color: #e31e24;
   font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'SF Pro', 'Inter', 'Helvetica Neue', Arial, sans-serif;
-  font-style: italic;
+  font-style: normal;
   font-weight: 700;
   font-size: 2.625rem;
   letter-spacing: -0.3px;
@@ -2853,7 +2853,7 @@ html {
   margin-top: 4px;
   color: #e31e24;
   font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'SF Pro', 'Inter', 'Helvetica Neue', Arial, sans-serif;
-  font-style: italic;
+  font-style: normal;
   font-weight: 700;
   font-size: 2.625rem;
   letter-spacing: -0.3px;
@@ -2963,7 +2963,7 @@ html {
 .projects-highlight {
   color: #e31e24;
   font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'SF Pro', 'Inter', 'Helvetica Neue', Arial, sans-serif;
-  font-style: italic;
+  font-style: normal;
   font-weight: 700;
 }
 
@@ -3088,7 +3088,7 @@ html {
 .ventures-highlight {
   color: #e31e24;
   font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'SF Pro', 'Inter', 'Helvetica Neue', Arial, sans-serif;
-  font-style: italic;
+  font-style: normal;
   font-weight: 700;
 }
 
