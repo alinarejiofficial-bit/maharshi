@@ -88,7 +88,7 @@ html {
 /* Floating Navbar */
 .navbar {
   position: relative;
-  background: linear-gradient(90deg, #ffffff 0%, #ffffff 52%, #eef6fb 100%);
+  background: #ffffff;
   border-radius: 28px;
   min-height: 80px;
   padding: 8px 20px 8px 24px;
@@ -96,9 +96,7 @@ html {
   align-items: center;
   justify-content: space-between;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.9);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 0, 0, 0.06);
 }
 
 /* Logo */

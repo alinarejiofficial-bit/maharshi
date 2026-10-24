@@ -112,9 +112,9 @@ iframe {
   max-width: 100vw;
   margin-left: calc(50% - 50vw);
   padding: 16px 48px 14px;
-  background: rgba(255, 255, 255, 0.55);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  background: #ffffff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
 }
 
 .navbar {
@@ -1305,9 +1305,9 @@ a.logo-container {
   max-width: 100vw;
   margin-left: calc(50% - 50vw);
   padding: 16px 48px 14px;
-  background: rgba(255, 255, 255, 0.92);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  background: #ffffff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
 }
 
 .inner-hero .nav-links a {
