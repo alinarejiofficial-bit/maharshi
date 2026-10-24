@@ -2305,11 +2305,12 @@ a.logo-container {
 .contact-card-body {
   background: #ffffff;
   text-align: center;
-  padding: 28px 24px 32px;
-  min-height: 180px;
+  padding: 32px 24px;
+  min-height: 140px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .contact-card-body p {
@@ -2319,7 +2320,6 @@ a.logo-container {
   font-weight: 400;
   line-height: 1.65;
   margin: 0;
-  flex: 1;
 }
 
 .contact-card-btn {
