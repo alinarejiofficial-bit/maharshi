@@ -366,7 +366,7 @@ a.logo-container {
   align-self: center;
   min-height: 0;
   width: 100%;
-  max-width: 50%;
+  max-width: 58%;
   padding: 0;
   margin-top: -32px;
 }
@@ -396,7 +396,7 @@ a.logo-container {
   flex-direction: column;
   align-items: flex-start;
   text-align: left;
-  max-width: 540px;
+  max-width: 720px;
   padding: 0 34px 0 4px;
   margin-left: 35px;
 }
@@ -422,7 +422,7 @@ a.logo-container {
 
 .hero-title {
   font-family: 'Playfair Display', serif;
-  font-size: clamp(2.6rem, 3.8vw, 3.75rem);
+  font-size: clamp(2.75rem, 3.8vw, 4rem);
   line-height: 1.12;
   font-weight: 500;
   color: #1a2e1a;
@@ -430,6 +430,16 @@ a.logo-container {
   letter-spacing: -1.2px;
   opacity: 0;
   animation: heroTitleIn 1s ease-out forwards;
+}
+
+.hero-title-nowrap {
+  white-space: nowrap;
+}
+
+@media (max-width: 480px) {
+  .hero-title-nowrap {
+    white-space: normal;
+  }
 }
 
 .hero-title-accent {
@@ -636,7 +646,7 @@ a.logo-container {
   }
 
   .hero-title {
-    font-size: clamp(1.75rem, 2.8vw, 2.65rem);
+    font-size: clamp(2.2rem, 3.6vw, 3.4rem);
     margin-bottom: 0.85rem;
   }
 
@@ -940,7 +950,7 @@ a.logo-container {
   }
 
   .hero-title {
-    font-size: clamp(1.85rem, 8vw, 2.5rem);
+    font-size: clamp(2.1rem, 9vw, 2.9rem);
     margin-bottom: 1.1rem;
   }
 
@@ -3000,58 +3010,15 @@ a.logo-container {
 }
 
 .about-visual-bg {
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
+  display: none;
 }
 
 .about-green-panel {
-  position: absolute;
-  top: 6%;
-  left: 0;
-  width: 44%;
-  height: 86%;
-  background: rgba(163, 177, 138, 0.32);
-  border-radius: 52px;
-  z-index: 0;
-}
-
-.about-panel-leaf {
-  position: absolute;
-  top: 58%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 22px;
-  height: 22px;
-  opacity: 0.95;
-}
-
-.about-panel-leaf svg {
-  width: 100%;
-  height: 100%;
-  display: block;
-}
-
-.about-dot-grid {
-  position: absolute;
-  bottom: 14%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 56px;
-  height: 72px;
-  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.85) 2px, transparent 2px);
-  background-size: 14px 14px;
-  opacity: 0.7;
+  display: none;
 }
 
 .about-curve-bl {
-  position: absolute;
-  bottom: -8%;
-  left: -12%;
-  width: 220px;
-  height: 220px;
-  border-radius: 50%;
-  background: rgba(163, 177, 138, 0.14);
+  display: none;
 }
 
 .about-images {
