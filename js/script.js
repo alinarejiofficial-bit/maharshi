@@ -228,6 +228,18 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   }, true);
 
+  // Header arrow buttons: move every row one image, then restart auto-scroll
+  function manualScroll(direction) {
+    stopVenturesAutoScroll();
+    rowStates.forEach((state) => scrollOneItem(state, direction, 0.6));
+    startVenturesAutoScroll(false);
+  }
+
+  const venturesPrevBtn = document.querySelector('.ventures-nav-prev');
+  const venturesNextBtn = document.querySelector('.ventures-nav-next');
+  if (venturesPrevBtn) venturesPrevBtn.addEventListener('click', () => manualScroll(-1));
+  if (venturesNextBtn) venturesNextBtn.addEventListener('click', () => manualScroll(1));
+
   startVenturesAutoScroll();
 });
 
