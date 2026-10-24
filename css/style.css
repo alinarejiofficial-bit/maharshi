@@ -634,6 +634,21 @@ a.logo-container {
   line-height: 1.35;
 }
 
+/* Responsive: hide description, number and title on two rows */
+@media (max-width: 1500px) {
+  .hero-stat-text {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "num"
+      "label";
+    row-gap: 2px;
+  }
+
+  .hero-stat-desc {
+    display: none;
+  }
+}
+
 @media (max-height: 820px) {
   .navbar-container {
     padding-top: 14px;
