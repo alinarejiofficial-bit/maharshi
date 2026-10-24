@@ -7,7 +7,7 @@
 
 body,
 html {
-  font-family: 'Inter', sans-serif;
+  font-family: 'DM Sans', sans-serif;
   height: 100%;
   width: 100%;
 }
@@ -131,7 +131,7 @@ html {
 .nav-links a {
   text-decoration: none;
   color: #111111;
-  font-family: 'Inter', sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-weight: 500;
   font-size: 17px;
   transition: color 0.25s ease;
@@ -302,7 +302,7 @@ html {
   gap: 0.5rem;
   margin-bottom: 1rem;
   color: var(--primary-green);
-  font-family: 'Inter', sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-size: 13px;
   font-weight: 600;
   letter-spacing: 2px;
@@ -316,7 +316,7 @@ html {
 }
 
 .hero-title {
-  font-family: 'Playfair Display', serif;
+  font-family: 'DM Sans', sans-serif;
   font-size: clamp(2rem, 3.2vw, 3.15rem);
   line-height: 1.15;
   font-weight: 500;
@@ -342,7 +342,7 @@ html {
 }
 
 .hero-desc {
-  font-family: 'Inter', sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-size: clamp(15px, 1.5vw, 16px);
   font-weight: 400;
   line-height: 1.6;
@@ -472,7 +472,7 @@ html {
 }
 
 .hero-stat-text span:last-child {
-  font-family: 'Inter', sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-size: 11px;
   color: #888888;
   line-height: 1.35;
@@ -663,7 +663,7 @@ html {
 ======================== */
 .about-page {
   margin: 0;
-  font-family: 'Inter', sans-serif;
+  font-family: 'DM Sans', sans-serif;
   background: #ffffff;
 }
 
@@ -930,7 +930,7 @@ html {
 
 .about-legacy-title em {
   color: #d7262f;
-  font-family: 'Playfair Display', serif;
+  font-family: 'DM Sans', sans-serif;
   font-style: italic;
   font-weight: 700;
 }
@@ -1020,7 +1020,7 @@ html {
 .about-legacy-contact-label {
   color: #000;
   font-size: 15px;
-  font-family: "DM Sans", Sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-weight: 400;
 }
 
@@ -1148,12 +1148,12 @@ html {
   font-size: 42px;
   font-weight: 400;
   line-height: 1.2381;
-  font-family: "DM Sans", Sans-serif;
+  font-family: 'DM Sans', sans-serif;
 }
 
 .about-commitment-title em {
   color: #d93035;
-  font-family: 'Playfair Display', serif;
+  font-family: 'DM Sans', sans-serif;
   font-style: italic;
   font-weight: 700;
 }
@@ -1207,7 +1207,7 @@ html {
   font-size: 25px;
   font-weight: 500;
   line-height: 1.4;
-  font-family: "DM Sans", Sans-serif;
+  font-family: 'DM Sans', sans-serif;
 }
 
 .about-commitment-pillar p {
@@ -1261,7 +1261,7 @@ html {
 }
 
 .about-commitment-bottom p {
-  font-family: "DM Sans", Sans-serif;
+  font-family: 'DM Sans', sans-serif;
     font-size: 18px;
     font-weight: 500;
     line-height: 1.36364;
@@ -1563,7 +1563,7 @@ html {
   margin: 0;
   margin-top: 15px;
   color: #FFFFFF;
-  font-family: "DM Sans", Sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-size: 20px;
   font-weight: 400;
 }
@@ -1577,7 +1577,7 @@ html {
 
 .contact-card-body p {
   color: #000000;
-    font-family: "DM Sans", Sans-serif;
+    font-family: 'DM Sans', sans-serif;
     font-size: 17px;
     font-weight: 400;
 }
@@ -1639,7 +1639,7 @@ html {
 
 .contact-reach-intro h2 em {
   color: #d93035;
-  font-family: 'Playfair Display', serif;
+  font-family: 'DM Sans', sans-serif;
   font-style: italic;
   font-weight: 700;
 }
@@ -1906,7 +1906,7 @@ html {
 
 .companies-listing-intro h2 em {
   color: #c02934;
-  font-family: 'Playfair Display', serif;
+  font-family: 'DM Sans', sans-serif;
   font-style: italic;
   font-weight: 700;
 }
@@ -1914,7 +1914,7 @@ html {
 .companies-listing-intro p {
   margin: 0;
   color: #2d3335;
-  font-family: "DM Sans", Sans-serif;
+  font-family: 'DM Sans', sans-serif;
  font-size: 17px;
   line-height: 1.7;
 }
@@ -2111,13 +2111,13 @@ html {
   font-size: 25px;
   margin-bottom: 8px;
   display: inline-block;
-  font-family: "Font Awesome 5 Free";
+  font-family: 'DM Sans', sans-serif;
     font-weight: 900;
 }
 
 .company-detail-side-card h5 {
   margin: 0 0 6px;
-  font-family: "DM Sans", Sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-size: 23px;
   font-weight: 600;
 }
@@ -2125,7 +2125,7 @@ html {
 .company-detail-side-card p {
   margin: 0 0 12px;
   line-height: 1.55;
-  font-family: "DM Sans", Sans-serif;
+  font-family: 'DM Sans', sans-serif;
     font-size: 17px;
 }
 
@@ -2306,7 +2306,7 @@ html {
 }
 
 .badge-num {
-  font-family: 'Inter', sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-size: 2.5rem;
   font-weight: 700;
   color: #111;
@@ -2322,7 +2322,7 @@ html {
 
 .badge-label {
   display: block;
-  font-family: 'Inter', sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-size: 15px;
   font-weight: 700;
   color: #111;
@@ -2344,7 +2344,7 @@ html {
   border: none;
   border-radius: 50px;
   padding: 9px 22px;
-  font-family: 'Inter', sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 2px;
@@ -2355,7 +2355,7 @@ html {
 }
 
 .about-title {
-  font-family: 'Inter', sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-size: 2.625rem;
   font-weight: 400;
   color: #000000;
@@ -2369,7 +2369,7 @@ html {
   display: inline-block;
   margin-top: 4px;
   color: #e31e24;
-  font-family: 'Playfair Display', serif;
+  font-family: 'DM Sans', sans-serif;
   font-style: italic;
   font-weight: 700;
   font-size: 2.625rem;
@@ -2381,7 +2381,7 @@ html {
   color: #20282D;
   line-height: 1.55;
   max-width: 100%;
-  font-family: "DM Sans", Sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-size: 17px;
 }
 
@@ -2402,7 +2402,7 @@ html {
   padding: 15px 0;
   user-select: none;
   color: #223035;
-  font-family: "DM Sans", Sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-size: 18px;
   font-weight: 500;
   line-height: 35px;
@@ -2429,7 +2429,7 @@ html {
 }
 
 .accordion-body p {
-  font-family: 'Inter', sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-size: 14px;
   color: #666;
   line-height: 1.75;
@@ -2583,7 +2583,7 @@ html {
   background: #f2f4f2;
   border-radius: 50px;
   padding: 9px 22px;
-  font-family: 'Inter', sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 2px;
@@ -2593,7 +2593,7 @@ html {
 }
 
 .values-title {
-  font-family: 'Inter', sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-size: 2.625rem;
   font-weight: 400;
   color: #000000;
@@ -2606,7 +2606,7 @@ html {
   display: inline-block;
   margin-top: 4px;
   color: #e31e24;
-  font-family: 'Playfair Display', serif;
+  font-family: 'DM Sans', sans-serif;
   font-style: italic;
   font-weight: 700;
   font-size: 2.625rem;
@@ -2715,7 +2715,7 @@ html {
 }
 
 .value-card-title {
-  font-family: 'Inter', sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-size: 1.35rem;
   font-weight: 600;
   color: #ffffff;
@@ -2798,7 +2798,7 @@ html {
   background: #f2f4f2;
   border-radius: 50px;
   padding: 9px 22px;
-  font-family: 'Inter', sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 2px;
@@ -2830,7 +2830,7 @@ html {
   background: #f2f4f2;
   border-radius: 50px;
   padding: 9px 22px;
-  font-family: 'Inter', sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 2px;
@@ -2840,7 +2840,7 @@ html {
 }
 
 .companies-title {
-  font-family: 'Inter', sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-size: 2.625rem;
   font-weight: 400;
   color: #000000;
@@ -2852,7 +2852,7 @@ html {
   display: inline-block;
   margin-top: 4px;
   color: #e31e24;
-  font-family: 'Playfair Display', serif;
+  font-family: 'DM Sans', sans-serif;
   font-style: italic;
   font-weight: 700;
   font-size: 2.625rem;
@@ -2942,7 +2942,7 @@ html {
   background: #f2f4f2;
   border-radius: 50px;
   padding: 9px 22px;
-  font-family: 'Inter', sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 2px;
@@ -2952,7 +2952,7 @@ html {
 }
 
 .projects-title {
-  font-family: 'Inter', sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-size: 3rem;
   font-weight: 400;
   line-height: 1.2;
@@ -2962,7 +2962,7 @@ html {
 
 .projects-highlight {
   color: #e31e24;
-  font-family: 'Playfair Display', serif;
+  font-family: 'DM Sans', sans-serif;
   font-style: italic;
   font-weight: 700;
 }
@@ -3004,7 +3004,7 @@ html {
 }
 
 .project-name {
-  font-family: 'Inter', sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-size: 2.15rem;
   font-weight: 600;
   color: #ffffff;
@@ -3068,7 +3068,7 @@ html {
   background: #f2f4f2;
   border-radius: 50px;
   padding: 9px 22px;
-  font-family: 'Inter', sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 2px;
@@ -3078,7 +3078,7 @@ html {
 }
 
 .ventures-title {
-  font-family: 'Inter', sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-size: 3rem;
   font-weight: 400;
   color: #0e1726;
@@ -3087,7 +3087,7 @@ html {
 
 .ventures-highlight {
   color: #e31e24;
-  font-family: 'Playfair Display', serif;
+  font-family: 'DM Sans', sans-serif;
   font-style: italic;
   font-weight: 700;
 }
@@ -3209,7 +3209,7 @@ html {
   top: -28px;
   left: 50%;
   transform: translateX(-50%);
-  font-family: 'Inter', sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-size: 14px;
   font-weight: 500;
   color: #ffffff;
@@ -3320,7 +3320,7 @@ html {
 
 .footer-title {
   color: #000000;
-  font-family: "DM Sans", Sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-size: 20px;
   font-weight: 700;
   margin-bottom: 9px;
@@ -3339,7 +3339,7 @@ html {
 .footer-links li,
 .footer-contact-list li,
 .footer-address {
-  font-family: "DM Sans", Sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-size: 16px;
   font-weight: 400;
   text-transform: capitalize;
@@ -3433,7 +3433,7 @@ html {
 }
 
 .company-card-title {
-  font-family: 'Inter', sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-size: 2.25rem;
   font-weight: 700;
   color: #1a2332;
@@ -3568,7 +3568,7 @@ html {
   padding: 16px 32px;
   background: #ffffff;
   border-radius: 50px;
-  font-family: 'Inter', sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-size: 16px;
   font-weight: 500;
   color: #223035;
