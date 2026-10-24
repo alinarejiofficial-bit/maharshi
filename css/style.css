@@ -597,14 +597,20 @@ a.logo-container {
 }
 
 .hero-stat-text {
-  display: flex;
-  flex-direction: column;
-  gap: 0.2rem;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-areas:
+    "num label"
+    "desc desc";
+  align-items: baseline;
+  column-gap: 8px;
+  row-gap: 3px;
 }
 
 .hero-stat-num {
+  grid-area: num;
   font-family: 'Google Sans', 'Helvetica Neue', Arial, sans-serif;
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 600;
   color: #1a2e1a;
   line-height: 1.1;
@@ -612,18 +618,20 @@ a.logo-container {
 }
 
 .hero-stat-label {
+  grid-area: label;
   font-family: 'Google Sans', 'Helvetica Neue', Arial, sans-serif;
   font-size: 15px;
   font-weight: 700;
   color: #1a1a1a;
-  line-height: 1.3;
+  line-height: 1.25;
 }
 
 .hero-stat-desc {
+  grid-area: desc;
   font-family: 'Google Sans', 'Helvetica Neue', Arial, sans-serif;
-  font-size: 13px;
+  font-size: 12.5px;
   color: #888888;
-  line-height: 1.4;
+  line-height: 1.35;
 }
 
 @media (max-height: 820px) {
