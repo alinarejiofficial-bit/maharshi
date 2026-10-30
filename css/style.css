@@ -2691,6 +2691,7 @@ a.logo-container {
 }
 
 .companies-listing-card {
+  position: relative;
   border: 1px solid rgba(163, 177, 138, 0.22);
   border-radius: 20px;
   padding: 22px 20px;
@@ -2699,13 +2700,33 @@ a.logo-container {
   display: flex;
   flex-direction: column;
   box-shadow: 0 8px 24px rgba(26, 46, 34, 0.05);
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
   transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
 }
 
 .companies-listing-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 14px 32px rgba(26, 46, 34, 0.08);
-  border-color: rgba(91, 122, 58, 0.35);
+  transform: translateY(-4px);
+  box-shadow: 0 16px 36px rgba(26, 46, 34, 0.1);
+  border-color: rgba(91, 122, 58, 0.45);
+}
+
+.companies-listing-card:focus-visible {
+  outline: 2px solid #5b7a3a;
+  outline-offset: 3px;
+}
+
+.companies-listing-card:hover h3,
+.companies-listing-card:hover .companies-listing-link {
+  color: #5b7a3a;
+}
+
+.companies-listing-card:hover .companies-listing-icon {
+  background: #5b7a3a;
+  color: #ffffff;
+  border-color: #5b7a3a;
+  transform: scale(1.06);
 }
 
 .companies-listing-icon {
@@ -2720,6 +2741,7 @@ a.logo-container {
   color: #5b7a3a;
   font-size: 16px;
   margin-bottom: 16px;
+  transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
 }
 
 .companies-listing-icon::before {
@@ -2735,6 +2757,7 @@ a.logo-container {
   font-size: 1.15rem;
   font-weight: 600;
   line-height: 1.35;
+  transition: color 0.25s ease;
 }
 
 .companies-listing-link {
@@ -2743,8 +2766,11 @@ a.logo-container {
   transition: color 0.25s ease;
 }
 
-.companies-listing-link:hover {
-  color: #5b7a3a;
+.companies-listing-link::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
 }
 
 @media (max-width: 1100px) {

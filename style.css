@@ -1934,6 +1934,7 @@ html {
 }
 
 .companies-listing-card {
+  position: relative;
   border: 1px solid #9f9f9f;
   border-radius: 20px;
   padding: 22px 20px 18px;
@@ -1941,6 +1942,15 @@ html {
   min-height: 188px;
   display: flex;
   flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.companies-listing-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
 }
 
 .companies-listing-icon {
