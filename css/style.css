@@ -2693,9 +2693,9 @@ a.logo-container {
 .companies-listing-card {
   border: 1px solid rgba(163, 177, 138, 0.22);
   border-radius: 20px;
-  padding: 22px 20px 18px;
+  padding: 22px 20px;
   background: #ffffff;
-  min-height: 168px;
+  min-height: 0;
   display: flex;
   flex-direction: column;
   box-shadow: 0 8px 24px rgba(26, 46, 34, 0.05);
@@ -2745,30 +2745,6 @@ a.logo-container {
 
 .companies-listing-link:hover {
   color: #5b7a3a;
-}
-
-.companies-listing-plus {
-  margin-top: auto;
-  width: 34px;
-  height: 34px;
-  border: 1.5px solid #5b7a3a;
-  border-radius: 50%;
-  background: #ffffff;
-  color: #5b7a3a;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 1;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  cursor: pointer;
-  transition: background 0.25s ease, color 0.25s ease;
-}
-
-.companies-listing-plus:hover {
-  background: #5b7a3a;
-  color: #ffffff;
 }
 
 @media (max-width: 1100px) {
@@ -2824,15 +2800,6 @@ a.logo-container {
     border-radius: inherit;
   }
 
-  .companies-listing-plus {
-    position: relative;
-    z-index: 1;
-    margin-top: 0;
-    flex-shrink: 0;
-    width: 32px;
-    height: 32px;
-    font-size: 18px;
-  }
 }
 
 /* ========================
