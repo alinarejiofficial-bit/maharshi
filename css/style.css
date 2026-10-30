@@ -1085,8 +1085,8 @@ a.logo-container {
   .hero-desc {
     display: block;
     background: rgba(255, 255, 255, 0.72);
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
     border: 1px solid rgba(255, 255, 255, 0.8);
     color: #3f4a36;
     font-size: 15px;
@@ -1177,18 +1177,18 @@ a.logo-container {
   .about-content {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    align-items: flex-start;
+    text-align: left;
   }
 
   .about-tag {
-    align-self: center;
+    align-self: flex-start;
   }
 
   .about-title,
   .about-highlight,
   .about-desc {
-    text-align: center;
+    text-align: left;
   }
 
   .about-accordion {
@@ -1197,7 +1197,7 @@ a.logo-container {
   }
 
   .about-btn {
-    align-self: center;
+    align-self: flex-start;
   }
 
   /* Show content immediately — minimal motion on mobile */
