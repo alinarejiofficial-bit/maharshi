@@ -32,8 +32,8 @@ iframe {
   --nav-bg: #ffffff;
   --hero-cream: #faf6ef;
   --hero-beige: #f3ebe0;
-  --hero-warm-white: #fdfcf8;
-  --hero-ivory: #fdfcf8;
+  --hero-warm-white: #ffffff;
+  --hero-ivory: #ffffff;
 }
 
 /* Hero Section */
@@ -79,10 +79,10 @@ iframe {
     90deg,
     var(--hero-ivory) 0%,
     var(--hero-ivory) 18%,
-    rgba(253, 252, 248, 0.98) 20%,
-    rgba(253, 252, 248, 0.88) 30%,
-    rgba(253, 252, 248, 0.55) 40%,
-    rgba(253, 252, 248, 0.18) 47%,
+    rgba(255, 255, 255, 0.98) 20%,
+    rgba(255, 255, 255, 0.88) 30%,
+    rgba(255, 255, 255, 0.55) 40%,
+    rgba(255, 255, 255, 0.18) 47%,
     transparent 68%
   );
 }
@@ -808,9 +808,9 @@ a.logo-container {
     background: linear-gradient(
       120deg,
       var(--hero-ivory) 0%,
-      rgba(253, 252, 248, 0.96) 30%,
-      rgba(253, 252, 248, 0.72) 55%,
-      rgba(253, 252, 248, 0.35) 75%,
+      rgba(255, 255, 255, 0.96) 30%,
+      rgba(255, 255, 255, 0.72) 55%,
+      rgba(255, 255, 255, 0.35) 75%,
       transparent 70%
     );
   }
@@ -1113,10 +1113,10 @@ a.logo-container {
   .hero-bg-gradient {
     background: linear-gradient(
       180deg,
-      rgba(253, 252, 248, 0.92) 0%,
-      rgba(253, 252, 248, 0.78) 28%,
-      rgba(253, 252, 248, 0.45) 52%,
-      rgba(253, 252, 248, 0.15) 72%,
+      rgba(255, 255, 255, 0.92) 0%,
+      rgba(255, 255, 255, 0.78) 28%,
+      rgba(255, 255, 255, 0.45) 52%,
+      rgba(255, 255, 255, 0.15) 72%,
       transparent 88%
     );
   }
@@ -1284,7 +1284,7 @@ a.logo-container {
 .about-page {
   margin: 0;
   font-family: 'Google Sans';
-  background: #f8f7f4;
+  background: #ffffff;
 }
 
 .about-page .about-btn,
@@ -1619,7 +1619,7 @@ a.logo-container {
    About Legacy Section
 ======================== */
 .about-legacy {
-  background: #f8f7f4;
+  background: #ffffff;
   padding: 96px 5rem 88px;
   position: relative;
 }
@@ -2271,7 +2271,7 @@ a.logo-container {
    Contact Page Sections
 ======================== */
 .contact-cards-section {
-  background: #f8f7f4;
+  background: #ffffff;
   padding: 96px 5rem 64px;
 }
 
@@ -2608,7 +2608,7 @@ a.logo-container {
    Companies Listing Page
 ======================== */
 .companies-listing-section {
-  background: #f8f7f4;
+  background: #ffffff;
   padding: 96px 5rem 88px;
 }
 
@@ -2806,7 +2806,7 @@ a.logo-container {
    Company Detail Page
 ======================== */
 .company-detail-section {
-  background: #f8f7f4;
+  background: #ffffff;
   padding: 96px 5rem 88px;
 }
 
@@ -3409,7 +3409,7 @@ a.logo-container {
 ======================== */
 .values-section {
   position: relative;
-  background: #f8f7f4;
+  background: #ffffff;
   padding:56px 5rem 56px;
   width: 100%;
   overflow: hidden;
