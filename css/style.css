@@ -798,20 +798,29 @@ a.logo-container {
   }
 
   .hero-bg-image {
-    width: 100%;
-    object-position: 78% 42%;
-    -webkit-mask-image: none;
-    mask-image: none;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    bottom: 0;
+    width: 82%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 75% 42%;
+    display: block;
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.2) 15%, rgba(0, 0, 0, 0.75) 30%, black 45%);
+    mask-image: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.2) 15%, rgba(0, 0, 0, 0.75) 30%, black 45%);
   }
 
   .hero-bg-gradient {
     background: linear-gradient(
-      120deg,
+      90deg,
       var(--hero-ivory) 0%,
-      rgba(255, 255, 255, 0.96) 30%,
-      rgba(255, 255, 255, 0.72) 55%,
-      rgba(255, 255, 255, 0.35) 75%,
-      transparent 70%
+      var(--hero-ivory) 20%,
+      rgba(255, 255, 255, 0.97) 32%,
+      rgba(255, 255, 255, 0.82) 46%,
+      rgba(255, 255, 255, 0.45) 62%,
+      rgba(255, 255, 255, 0.12) 78%,
+      transparent 90%
     );
   }
 
@@ -1108,16 +1117,18 @@ a.logo-container {
     width: 100%;
     top: 0;
     object-position: center 28%;
+    -webkit-mask-image: none;
+    mask-image: none;
   }
 
   .hero-bg-gradient {
     background: linear-gradient(
       180deg,
-      rgba(255, 255, 255, 0.92) 0%,
-      rgba(255, 255, 255, 0.78) 28%,
-      rgba(255, 255, 255, 0.45) 52%,
-      rgba(255, 255, 255, 0.15) 72%,
-      transparent 88%
+      rgba(255, 255, 255, 0.95) 0%,
+      rgba(255, 255, 255, 0.88) 32%,
+      rgba(255, 255, 255, 0.65) 58%,
+      rgba(255, 255, 255, 0.35) 82%,
+      rgba(255, 255, 255, 0.15) 100%
     );
   }
 
