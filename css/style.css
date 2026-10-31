@@ -1019,7 +1019,7 @@ a.logo-container {
   }
 
   .logo-img {
-    height: 56px;
+    height: 44px;
   }
 
   .hero-title {
@@ -1075,8 +1075,8 @@ a.logo-container {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 44px;
-    height: 44px;
+    width: 38px;
+    height: 38px;
     border-radius: 50%;
     background: #f0f0f0;
     color: #84b742;
@@ -1088,6 +1088,8 @@ a.logo-container {
 
   .hero .nav-toggle {
     grid-column: 3;
+    width: 38px;
+    height: 38px;
   }
 
   .hero .nav-right {
@@ -1110,7 +1112,7 @@ a.logo-container {
     align-items: center;
     text-align: center;
     width: 100%;
-    padding: calc(1.25rem + 90px) 0 0;
+    padding: calc(1rem + 54px) 0 0;
   }
 
   .hero-label {
@@ -1379,7 +1381,7 @@ a.logo-container {
   width: 100vw;
   max-width: 100vw;
   margin-left: calc(50% - 50vw);
-  padding: 16px 48px 14px;
+  padding: 10px 48px;
   background: #ffffff;
   border-bottom: 1px solid rgba(0, 0, 0, 0.06);
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
