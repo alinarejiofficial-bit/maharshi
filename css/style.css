@@ -673,16 +673,17 @@ a.logo-container {
   }
 
   .hero-title {
-    font-size: clamp(2.2rem, 3.6vw, 3.4rem);
-    margin-bottom: 0.85rem;
+    font-size: clamp(1.85rem, 3vw, 2.4rem);
+    margin-bottom: 0.75rem;
   }
 
   .hero-title-line {
-    margin-bottom: 1rem;
+    margin-bottom: 0.85rem;
   }
 
   .hero-desc {
-    margin-bottom: 1.1rem;
+    font-size: 14.5px;
+    margin-bottom: 1rem;
     line-height: 1.5;
   }
 
@@ -985,8 +986,8 @@ a.logo-container {
     max-width: 100%;
     align-items: flex-start;
     align-self: start;
-    margin-top: 36px;
-    padding-top: 1.25rem;
+    margin-top: 20px;
+    padding-top: 0.75rem;
   }
 
   .hero-content {
@@ -996,20 +997,22 @@ a.logo-container {
   }
 
   .hero-label {
-    font-size: 17px;
-    margin-bottom: 0.85rem;
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-bottom: 0.5rem;
   }
 
   .hero-title {
-    font-size: clamp(3.06rem, 4.3vw, 4.3rem);
-    margin-bottom: 1rem;
+    font-size: clamp(1.85rem, 3.2vw, 2.35rem);
+    line-height: 1.15;
+    margin-bottom: 0.75rem;
   }
 
   .hero-desc {
-    font-size: 20px;
+    font-size: 15px;
     line-height: 1.55;
-    max-width: 520px;
-    margin-bottom: 1.5rem;
+    max-width: 480px;
+    margin-bottom: 1.15rem;
   }
 
   .navbar-container {
@@ -1192,8 +1195,8 @@ a.logo-container {
   }
 
   .hero-title {
-    font-size: clamp(2.4rem, 9.5vw, 3.2rem);
-    margin-bottom: 1.1rem;
+    font-size: clamp(1.75rem, 6.5vw, 2.2rem);
+    margin-bottom: 0.85rem;
   }
 
   .hero-buttons {
@@ -1313,13 +1316,13 @@ a.logo-container {
     backdrop-filter: none;
     border: 1px solid rgba(255, 255, 255, 0.8);
     color: #3f4a36;
-    font-size: 20px;
+    font-size: 14.5px;
     font-weight: 500;
-    line-height: 1.6;
-    padding: 14px 18px;
-    border-radius: 16px;
+    line-height: 1.5;
+    padding: 10px 14px;
+    border-radius: 14px;
     max-width: 100%;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.15rem;
     text-align: center;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
   }
