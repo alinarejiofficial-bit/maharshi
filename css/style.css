@@ -859,9 +859,9 @@ a.logo-container {
   }
 
   .hero-content {
-    max-width: 100%;
+    max-width: calc(100% - 20px);
     padding: 0;
-    margin-left: 0;
+    margin-left: 20px;
   }
 
   .navbar-container {
@@ -1138,6 +1138,7 @@ a.logo-container {
     align-items: center;
     text-align: center;
     width: 100%;
+    margin-left: 0;
     padding: calc(1rem + 54px) 0 0;
   }
 
