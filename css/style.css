@@ -854,14 +854,31 @@ a.logo-container {
     max-width: 100%;
     align-items: flex-start;
     align-self: start;
-    margin-top: 90px;
-    padding-top: 1.5rem;
+    margin-top: 36px;
+    padding-top: 1.25rem;
   }
 
   .hero-content {
     max-width: calc(100% - 20px);
     padding: 0;
     margin-left: 20px;
+  }
+
+  .hero-label {
+    font-size: 17px;
+    margin-bottom: 0.85rem;
+  }
+
+  .hero-title {
+    font-size: clamp(3.06rem, 4.3vw, 4.3rem);
+    margin-bottom: 1rem;
+  }
+
+  .hero-desc {
+    font-size: 20px;
+    line-height: 1.55;
+    max-width: 520px;
+    margin-bottom: 1.5rem;
   }
 
   .navbar-container {
@@ -1044,7 +1061,7 @@ a.logo-container {
   }
 
   .hero-title {
-    font-size: clamp(2.1rem, 9vw, 2.9rem);
+    font-size: clamp(2.4rem, 9.5vw, 3.2rem);
     margin-bottom: 1.1rem;
   }
 
@@ -1165,7 +1182,7 @@ a.logo-container {
     backdrop-filter: none;
     border: 1px solid rgba(255, 255, 255, 0.8);
     color: #3f4a36;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: 500;
     line-height: 1.6;
     padding: 14px 18px;
