@@ -1426,12 +1426,13 @@ a.logo-container {
   .hero-content::before {
     content: "";
     position: absolute;
-    inset: -28px -22px;
+    inset: -36px -28px;
     z-index: -1;
     pointer-events: none;
-    background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.88) 0%, rgba(255, 255, 255, 0.72) 55%, rgba(255, 255, 255, 0) 100%);
-    -webkit-filter: blur(14px);
-    filter: blur(14px);
+    border-radius: 48px;
+    background: rgba(255, 255, 255, 0.82);
+    -webkit-filter: blur(16px);
+    filter: blur(16px);
   }
 
   .hero-stats {
