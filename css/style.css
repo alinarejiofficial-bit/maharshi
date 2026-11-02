@@ -1337,23 +1337,29 @@ a.logo-container {
   }
 
   .hero-content {
-    align-items: flex-start;
-    text-align: left;
-    max-width: calc(100% - 20px);
-    margin-left: 20px;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    max-width: calc(100% - 32px);
+    margin-left: auto;
+    margin-right: auto;
     padding: 0;
   }
 
+  .hero-buttons {
+    justify-content: center !important;
+  }
+
   .hero-label {
-    justify-content: flex-start;
-    text-align: left;
+    justify-content: center;
+    text-align: center;
     font-size: 12px;
     letter-spacing: 2px;
     margin-bottom: 0.5rem;
   }
 
   .hero-title {
-    text-align: left;
+    text-align: center;
     font-size: clamp(1.85rem, 3.2vw, 2.35rem);
     line-height: 1.15;
     margin-bottom: 0.75rem;
@@ -1361,8 +1367,8 @@ a.logo-container {
 
   .hero-title-line {
     width: 56px;
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 0.85rem;
   }
 
@@ -1381,7 +1387,7 @@ a.logo-container {
     border-radius: 0 !important;
     max-width: 480px;
     margin-bottom: 1.15rem;
-    text-align: left !important;
+    text-align: center !important;
     text-shadow: 0 0 16px #ffffff, 0 1px 3px rgba(255, 255, 255, 0.95), 0 0 24px #ffffff;
   }
 
@@ -1510,7 +1516,7 @@ a.logo-container {
       font-size: 12.5px;
     }
     .hero-content {
-      margin-left: 10px;
+      margin-left: auto;
     }
     .hero-buttons {
       gap: 8px !important;
