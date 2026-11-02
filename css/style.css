@@ -1269,9 +1269,9 @@ a.logo-container {
     transform: none;
   }
 
-  /* Hero Responsive Layout (matching Image 2) */
+  /* Hero Responsive Layout: phone + Get in Touch live inside the menu */
   .hero .navbar {
-    grid-template-columns: 1fr auto auto;
+    grid-template-columns: 1fr auto;
     column-gap: 14px;
   }
 
@@ -1280,38 +1280,11 @@ a.logo-container {
   }
 
   .hero .nav-right {
-    display: flex !important;
-    align-items: center;
-    gap: 14px;
-    grid-column: 2;
-    grid-row: 1;
-  }
-
-  .hero .contact-info {
-    display: flex !important;
-    align-items: center;
-    gap: 10px;
-  }
-
-  .hero .divider {
-    display: block !important;
-    width: 1px;
-    height: 28px;
-    background-color: #d5d5d5;
-  }
-
-  .hero .navbar .btn-primary {
-    display: inline-flex !important;
-    min-width: auto;
-    padding: 9px 18px;
-    font-size: 14px;
-    background-color: #84b742;
-    color: #ffffff;
-    border-radius: 999px;
+    display: none !important;
   }
 
   .hero .nav-toggle {
-    grid-column: 3;
+    grid-column: 2;
     grid-row: 1;
     width: 40px;
     height: 40px;
