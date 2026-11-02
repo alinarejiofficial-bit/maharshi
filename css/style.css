@@ -6307,6 +6307,12 @@ a.logo-container {
 }
 
 @media (max-width: 768px) {
+  .values-section-bg,
+  .values-visual-bg,
+  .values-green-blob {
+    display: none !important;
+  }
+
   .about-img-top,
   .about-visual-bg {
     display: none;
