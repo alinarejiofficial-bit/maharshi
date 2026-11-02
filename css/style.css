@@ -1401,24 +1401,28 @@ a.logo-container {
 
   .hero-bg-image {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 40px;
     right: 0;
     bottom: 0;
-    width: 100%;
+    width: 75%;
     height: 100%;
     object-fit: cover;
     object-position: 85% 42%;
     display: block;
-    -webkit-mask-image: none;
-    mask-image: none;
-    -webkit-filter: blur(6px);
-    filter: blur(6px);
-    transform: scale(1.08);
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, transparent 22%, rgba(0, 0, 0, 0.3) 42%, rgba(0, 0, 0, 0.85) 62%, black 76%);
+    mask-image: linear-gradient(to right, transparent 0%, transparent 22%, rgba(0, 0, 0, 0.3) 42%, rgba(0, 0, 0, 0.85) 62%, black 76%);
   }
 
   .hero-bg-gradient {
-    background: rgba(255, 255, 255, 0.3);
+    background: linear-gradient(
+      90deg,
+      #ffffff 0%,
+      #ffffff 45%,
+      rgba(255, 255, 255, 0.98) 55%,
+      rgba(255, 255, 255, 0.82) 68%,
+      rgba(255, 255, 255, 0.35) 82%,
+      transparent 96%
+    );
   }
 
   .hero-stats {
